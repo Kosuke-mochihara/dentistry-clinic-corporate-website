@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-section-header{
+  margin-top: rem(80);
+
+  @include mq(md) {
+      margin-top: rem(120);
+    }
+}

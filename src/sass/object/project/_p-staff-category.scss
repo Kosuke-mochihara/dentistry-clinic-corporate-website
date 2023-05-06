@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.p-staff-category {}
+
+.p-staff-category__title {
+  position: relative;
+  padding-left: rem(34);
+}
+
+.p-staff-category__title::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/staff-clinic__icon03.svg);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(24);
+  height: rem(24);
+  left: 0;
+}
+
+
+.p-staff-category__items {
+  padding-top: rem(20);
+  padding-left: rem(20);
+}
+
+.p-staff-category__item a {
+  padding-left: rem(12);
+  position: relative;
+  width: inherit;
+}
+
+.p-staff-category__item a:hover {
+  opacity: 0.8;
+}
+
+.p-staff-category__item a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/right-icon.png);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: rem(6);
+  height: rem(12);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

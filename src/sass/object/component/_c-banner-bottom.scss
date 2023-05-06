@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.c-banner-bottom {
+  background-color: #fff;
+  opacity: 0.85;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+
+  @include mq(md){
+    display: none;
+  }
+}
+
+.c-banner-bottom__inner {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+}
+
+.c-banner-bottom__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+}
+
+.c-banner-bottom__tel-box {
+  text-align: center;
+}
+
+.c-banner-bottom__tel {
+  color: $main-color;
+  font-size: rem(20);
+  font-weight: bold;
+  line-height: calc(23 / 20);
+}
+
+.c-banner-bottom__tel span {
+  background-image: url(../images/common/tel__icon.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(18);
+  height: rem(18);
+  display: inline-block;
+  margin-right: rem(4);
+}
+
+.c-banner-bottom__time {
+  font-size: rem(10);
+  line-height: calc(12/ 10);
+}
+
+.c-banner-bottom__web-reservation-box {
+  color: #fff;
+  background-color: $main-color;
+  padding: rem(8) rem(16) rem(8);
+  border-radius: 8px;
+}
+
+.c-banner-bottom__web-reservation-box a {
+  display: flex;
+  align-items: center;
+  gap: rem(11);
+}
+
+.c-banner-bottom__web-reservation-img {
+  width: rem(44);
+  height: rem(25);
+}
+
+.c-banner-bottom__web-reservation {
+  line-height: 1;
+}
+
+.c-banner-bottom__web-reservation span {
+  font-size: rem(12);
+  font-weight: bold;
+  line-height: 1;
+}

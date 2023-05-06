@@ -1,0 +1,236 @@
+@use "global" as *;
+
+
+.p-staff-blog-archive {}
+
+.p-staff-blog-archive__inner {}
+
+.p-staff-blog-archive__contents {
+  margin-top: rem(60);
+
+  @include mq(md) {
+    display: flex;
+    gap: rem(30);
+  }
+}
+
+.p-staff-blog-archive__archive {}
+
+.p-staff-blog-archive__archive-title {
+  font-size: rem(20);
+  line-height: calc(32 / 20);
+  letter-spacing: 0.08em;
+  font-weight: bold;
+
+  @include mq(md) {
+    font-size: rem(28);
+    line-height: calc(40 / 28);
+  }
+}
+
+.p-staff-blog-archive__content {
+  @include mq(md) {
+    width: rem(670)
+  }
+
+}
+
+.p-staff-blog-archive__archive-content {
+  margin-top: rem(25);
+  display: flex;
+  align-items: center;
+
+  @include mq(md) {
+    margin-top: rem(31);
+  }
+}
+
+.p-staff-blog-archive__archive-date {
+  color: $main-color;
+  position: relative;
+  padding-left: rem(20);
+}
+
+.p-staff-blog-archive__archive-date::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/staff-blog-archive__icon.png);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-repeat: no-repeat;
+  width: rem(14);
+  height: rem(14);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.p-staff-blog-archive__archive-category {
+  margin-left: rem(43);
+  font-size: rem(11);
+  padding: rem(8) rem(13);
+  color: #fff;
+  background-color: $main-color;
+  border-radius: 12px;
+}
+
+.p-staff-blog-archive__archive-text {
+  margin-top: rem(60);
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+
+.p-staff-blog-archive__archive-text a {
+  color: $main-color;
+}
+
+.p-staff-blog-archive__contents h2 {
+  position: relative;
+  margin-top: rem(89);
+  color: $main-color;
+  font-size: rem(18);
+  letter-spacing: 0.08em;
+  padding-left: rem(32);
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-staff-blog-archive__contents h2::before {
+  position: absolute;
+  content: "";
+  width: rem(6);
+  height: rem(40);
+  background-color: $main-color;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  @include mq(md) {
+    width: rem(8);
+  }
+}
+
+.p-staff-blog-archive__archive-img {
+  margin-top: rem(20);
+  aspect-ratio: 335 / 209;
+  overflow: hidden;
+
+  @include mq(md) {
+    aspect-ratio: 670 / 419;
+  }
+}
+
+.p-staff-blog-archive__archive-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-staff-blog-archive__contents h3 {
+  margin-top: rem(40);
+  letter-spacing: 0.08em;
+  line-height: calc(32 / 16);
+}
+
+.p-staff-blog-archive__contents h3+p {
+  margin-top: rem(18);
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+
+.p-staff-blog-archive__contents h4 {
+  margin-top: rem(68);
+  font-size: rem(14);
+  letter-spacing: 0.08em;
+  line-height: calc(32 / 16);
+}
+
+.p-staff-blog-archive__contents h4+p {
+  margin-top: rem(17);
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+
+.p-staff-blog-archive__contents h4+p+ul {
+  margin-top: rem(28);
+  padding-left: rem(14);
+  list-style: inside;
+}
+
+.p-staff-blog-archive__contents h4+p+ul li {
+  margin-top: rem(16);
+}
+
+.p-staff-blog-archive__archive-permalink {
+  margin-top: rem((40));
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  font-size: rem(14);
+
+  @include mq(md) {
+    justify-content: center;
+    gap: rem(20);
+  }
+}
+
+.p-staff-blog-archive__btn-prev a {
+  position: relative;
+  padding: rem(12) rem(15) rem(11) rem(34);
+  color: #fff;
+  background-color: $main-color;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.p-staff-blog-archive__btn-prev a:hover,
+.p-staff-blog-archive__btn-summary a:hover,
+.p-staff-blog-archive__btn-next a:hover {
+  opacity: 0.8;
+}
+
+.p-staff-blog-archive__btn-prev a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/archive-arrow-left.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(16);
+  height: rem(16);
+  left: rem(14);
+}
+
+
+.p-staff-blog-archive__btn-summary a {
+  padding: rem(12) rem(18) rem(11);
+  color: $main-color;
+  background-color: #fff;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  display: flex;
+}
+
+.p-staff-blog-archive__btn-next a {
+  position: relative;
+  padding: rem(12) rem(34) rem(11) rem(15);
+  color: #fff;
+  background-color: $main-color;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.p-staff-blog-archive__btn-next a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/archive-arrow-right.png);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(16);
+  height: rem(16);
+  right: rem(14);
+}

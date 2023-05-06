@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.p-page-medical {}
+
+.p-page-medical__inner {}
+
+.p-page-medical__content {
+  width: rem(600);
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include mq(md) {
+    width: rem(998);
+    max-width: 100%;
+  }
+}
+
+.p-page-medical__content:nth-child(n+2) {
+  margin-top: rem(83);
+
+  @include mq(md) {
+    margin-top: rem(84);
+  }
+}
+
+.p-page-medical___section-title {}
+
+.p-page-medical__sub-title {
+  font-size: rem(14);
+  padding: rem(11) rem(12);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background-color: $main-color;
+  border-radius: 24px;
+  margin-left: rem(24);
+}
+
+.p-page-medical__sub-title.p-page-medical__sub-title--red {
+  background-color: $accent-color2;
+}
+
+.p-page-medical__items {
+  margin-top: rem(34);
+
+
+  @include mq(md) {
+    display: flex;
+    gap: rem(16);
+  }
+}
+
+.p-page-medical__item {
+  text-align: center;
+}
+
+.p-page-medical__item:nth-child(n+2) {
+  margin-top: rem(16);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-page-medical__item a {
+  font-size: rem(20);
+  border: 1px solid $main-color;
+  color: $main-color;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  width: 100%;
+  height: rem(60);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 12px;
+
+  @include mq(md) {
+    padding: rem(24) rem(32);
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    padding: rem(24) rem(33);
+  }
+}
+
+.p-page-medical__item a:hover {
+  opacity: 0.8;
+}

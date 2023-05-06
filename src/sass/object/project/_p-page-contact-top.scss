@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-page-contact-top{
+
+}
+
+.p-page-contact-top__bg {
+  background-image: url(../images/common/page-contact__top-sp.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/page-contact__top-pc.jpg);
+  }
+}

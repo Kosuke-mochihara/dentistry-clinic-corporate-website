@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #393939;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.4px;
+      }
+    </style>
+  </defs>
+  <g id="グループ_10833" data-name="グループ 10833" transform="translate(-305 -7173)">
+    <g id="icon" transform="translate(310 7176)">
+      <path id="パス_43731" data-name="パス 43731" class="cls-1" d="M14.061,3H7.791A1.791,1.791,0,0,0,6,4.791V19.122a1.791,1.791,0,0,0,1.791,1.791H18.54a1.791,1.791,0,0,0,1.791-1.791V9.27Z" transform="translate(-6 -3)"/>
+      <path id="パス_43732" data-name="パス 43732" class="cls-1" d="M19.5,3V9.27h6.27" transform="translate(-11.439 -3)"/>
+    </g>
+    <rect id="長方形_23334" data-name="長方形 23334" class="cls-2" width="24" height="24" transform="translate(305 7173)"/>
+  </g>
+</svg>

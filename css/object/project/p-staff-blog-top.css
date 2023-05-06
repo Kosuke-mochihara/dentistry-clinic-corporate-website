@@ -1,0 +1,29 @@
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #393939;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.p-page-staff-top__bg {
+  background-image: url(../images/common/page-staff__top-sp.jpg);
+}
+@media screen and (min-width: 768px) {
+  .p-page-staff-top__bg {
+    background-image: url(../images/common/page-staff__top-pc.jpg);
+  }
+}
+/*# sourceMappingURL=p-staff-blog-top.css.map */

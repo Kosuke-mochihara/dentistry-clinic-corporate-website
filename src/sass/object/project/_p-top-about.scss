@@ -1,0 +1,66 @@
+@use "global" as *;
+
+
+.p-top-about {
+
+}
+
+.p-top-about__inner {
+
+}
+
+
+.p-top-about__section-title {
+  text-align: center;
+}
+
+
+.p-top-about__items {
+  margin-top: rem(40);
+  display: grid;
+
+  @include mq(md){
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(60);
+  }
+}
+
+.p-top-about__item {
+  padding: 0 rem(27);
+
+  @include mq(md)
+{
+  padding: 0;
+}}
+.p-top-about__item:nth-child(n+2) {
+  margin-top: rem(65);
+
+  @include mq(md){
+    margin-top: 0;
+  }
+}
+.p-top-about__header-img {
+  width: rem(177);
+  margin: auto;
+}
+
+.p-top-about__body-img {
+  margin-top: rem(12);
+}
+
+.p-top-about__text {
+  margin-top: rem(24);
+  font-size: rem(14);
+  line-height: calc( 24 / 14 );
+
+  @include mq(md){
+ width: rem(281);
+ max-width: 100%;
+ margin: auto;
+  }
+}
+
+.p-top-about__text span {
+  color: $accent-color2;
+}
+

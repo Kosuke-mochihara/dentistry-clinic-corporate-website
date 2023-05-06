@@ -1,0 +1,81 @@
+@use "global" as *;
+
+/* Foundation */
+.c-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.c-pagination__list {
+  display: flex;
+  gap: rem(7);
+
+  @include mq(md) {
+    gap: rem(10);
+  }
+}
+
+.c-pagination__item {}
+
+.c-pagination__link {
+  font-size: rem(11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  width: rem(30);
+  height: rem(30);
+  transition: 0.3s;
+
+  @include mq(md) {
+    font-size: rem(14);
+    width: rem(34);
+    height: rem(36);
+  }
+}
+
+.c-pagination__link:hover {
+  background-color: $main-color;
+  color: #fff;
+}
+
+.c-pagination__item-prev .c-pagination__link,
+.c-pagination__item-next .c-pagination__link {
+  width: rem(71);
+  height: rem(30);
+  color: #fff;
+  background-color: $main-color;
+  position: relative;
+
+  @include mq(md) {
+    width: rem(82);
+    height: rem(36);
+  }
+}
+
+.c-pagination__item-prev .c-pagination__link:hover,
+.c-pagination__item-next .c-pagination__link:hover {
+  opacity: 0.8;
+}
+
+.c-pagination__icon--prev {
+  background-image: url(../images/common/archive-arrow-left.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(14);
+  height: rem(14);
+  margin-right: rem(7);
+}
+
+.c-pagination__icon--next {
+  background-image: url(../images/common/archive-arrow-right.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(14);
+  height: rem(14);
+  margin-left: rem(7);
+}

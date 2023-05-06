@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>みなみ歯科クリニック</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- スワイパー -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- スワイパー -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+
+
+  <!-- ヘッダー -->
+
+  <header class="l-header p-header">
+    <div class="p-header__inner l-inner">
+      <h1 class="c-logo">
+        <a class="logo__link" href="#">
+          <img src="../images/common/header-logo-01-sp.png" alt="ロゴ">
+        </a>
+      </h1>
+      <button class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__contents">
+        <div class="pc-nav js-drawer-menu">
+          <ul class="pc-nav__items">
+            <li class="pc-nav__item"><a href="index.html">
+                <svg id="icon-01" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="home">
+                    <rect id="長方形_23351" data-name="長方形 23351" width="24" height="24" fill="#1391e6" opacity="0" />
+                    <path id="パス_43759" data-name="パス 43759"
+                      d="M20.42,10.18,12.71,2.3a1,1,0,0,0-1.42,0L3.58,10.19A2,2,0,0,0,3,11.62V20a2,2,0,0,0,1.89,2H19.11A2,2,0,0,0,21,20V11.62a2.07,2.07,0,0,0-.58-1.44ZM10,20V14h4v6Zm9,0H16V13a1,1,0,0,0-1-1H9a1,1,0,0,0-1,1v7H5V11.58l7-7.15,7,7.19Z" />
+                  </g>
+                </svg>
+                ホーム</a></li>
+            <li class="pc-nav__item"><a href="page-about.html"><svg id="icon-02" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <rect id="長方形_23373" data-name="長方形 23373" width="24" height="24" opacity="0" />
+                  <path id="hospital"
+                    d="M5.368,10.232V8.555a.5.5,0,0,1,.5-.5H7.548a.5.5,0,0,1,.5.5v1.677a.5.5,0,0,1-.5.5H5.871A.5.5,0,0,1,5.368,10.232Zm5.871.5h1.677a.5.5,0,0,0,.5-.5V8.555a.5.5,0,0,0-.5-.5H11.238a.5.5,0,0,0-.5.5v1.677A.5.5,0,0,0,11.238,10.735ZM8.051,14.258V12.58a.5.5,0,0,0-.5-.5H5.871a.5.5,0,0,0-.5.5v1.677a.5.5,0,0,0,.5.5H7.548A.5.5,0,0,0,8.051,14.258Zm3.187.5h1.677a.5.5,0,0,0,.5-.5V12.58a.5.5,0,0,0-.5-.5H11.238a.5.5,0,0,0-.5.5v1.677A.5.5,0,0,0,11.238,14.761Zm7.548,5.2v1.51H0v-1.51a.5.5,0,0,1,.5-.5h.818V3.566a.95.95,0,0,1,1.006-.882H6.039V1.006A1.006,1.006,0,0,1,7.045,0h4.7a1.006,1.006,0,0,1,1.006,1.006V2.684h3.711a.95.95,0,0,1,1.006.882V19.458h.818A.5.5,0,0,1,18.787,19.961ZM3.334,19.416H8.051v-2.81a.5.5,0,0,1,.5-.5h1.677a.5.5,0,0,1,.5.5v2.81h4.718V4.7h-2.7V5.7A1.006,1.006,0,0,1,11.742,6.71h-4.7A1.006,1.006,0,0,1,6.039,5.7V4.7h-2.7ZM11.155,2.684h-1.09V1.594a.252.252,0,0,0-.252-.252H8.974a.252.252,0,0,0-.252.252v1.09H7.632a.252.252,0,0,0-.252.252v.839a.252.252,0,0,0,.252.252h1.09v1.09a.252.252,0,0,0,.252.252h.839a.252.252,0,0,0,.252-.252V4.026h1.09a.252.252,0,0,0,.252-.252V2.935A.252.252,0,0,0,11.155,2.684Z"
+                    transform="translate(3 1)" />
+                </svg>当院について</a>
+            </li>
+            <li class="pc-nav__item"><a href="page-medical.html"><svg id="icon-03" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <g id="file-text">
+                    <rect id="長方形_23355" data-name="長方形 23355" width="24" height="24" opacity="0" />
+                    <path id="パス_43765" data-name="パス 43765" d="M15,16H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"
+                     />
+                    <path id="パス_43766" data-name="パス 43766" d="M9,14h3a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Z"
+                     />
+                    <path id="パス_43767" data-name="パス 43767"
+                      d="M19.74,8.33l-5.44-6A1,1,0,0,0,13.56,2h-7A2.53,2.53,0,0,0,4,4.5v15A2.53,2.53,0,0,0,6.56,22H17.44A2.53,2.53,0,0,0,20,19.5V9a1,1,0,0,0-.26-.67ZM14,5l2.74,3h-2A.79.79,0,0,1,14,7.15Zm3.44,15H6.56A.53.53,0,0,1,6,19.5V4.5A.53.53,0,0,1,6.56,4H12V7.15A2.79,2.79,0,0,0,14.71,10H18v9.5a.53.53,0,0,1-.56.5Z" />
+                  </g>
+                </svg>診療案内</a>
+            </li>
+            <li class="pc-nav__item"><a href="page-staff.html"><svg id="icon-04" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <g id="people">
+                    <rect id="長方形_23354" data-name="長方形 23354" width="24" height="24" opacity="0" />
+                    <path id="パス_43762" data-name="パス 43762"
+                      d="M9,11A4,4,0,1,0,5,7a4,4,0,0,0,4,4ZM9,5A2,2,0,1,1,7,7,2,2,0,0,1,9,5Z" />
+                    <path id="パス_43763" data-name="パス 43763"
+                      d="M17,13a3,3,0,1,0-3-3A3,3,0,0,0,17,13Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,17,9Z" />
+                    <path id="パス_43764" data-name="パス 43764"
+                      d="M17,14a5,5,0,0,0-3.06,1.05A7,7,0,0,0,2,20a1,1,0,1,0,2,0,5,5,0,0,1,10,0,1,1,0,0,0,2,0,6.9,6.9,0,0,0-.86-3.35A3,3,0,0,1,20,19a1,1,0,1,0,2,0A5,5,0,0,0,17,14Z" />
+                  </g>
+                </svg>スタッフ紹介</a>
+            </li>
+            <li class="pc-nav__item"><a href="archive.html"><svg id="icon-05" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <g id="edit">
+                    <rect id="長方形_23353" data-name="長方形 23353" width="24" height="24"  opacity="0" />
+                    <path id="パス_43761" data-name="パス 43761"
+                      d="M19.4,7.34,16.66,4.6A2,2,0,0,0,14,4.53l-9,9a2,2,0,0,0-.57,1.21L4,18.91A1,1,0,0,0,5,20h.09l4.17-.38a2,2,0,0,0,1.21-.57l9-9a1.92,1.92,0,0,0-.07-2.71ZM9.08,17.62l-3,.28.27-3L12,9.32l2.7,2.7ZM16,10.68,13.32,8l1.95-2L18,8.73Z" />
+                  </g>
+                </svg>
+                スタッフブログ</a>
+            </li>
+            <li class="pc-nav__item"><a href="page-contact.html"><svg id="icon-07" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24">
+                  <g id="email">
+                    <rect id="長方形_23352" data-name="長方形 23352" width="24" height="24" opacity="0" />
+                    <path id="パス_43760" data-name="パス 43760"
+                      d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7a3,3,0,0,0-3-3Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,1.2,0L20,7.25V17A1,1,0,0,1,19,18Z" />
+                  </g>
+                </svg>
+                お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-header__content">
+          <div class="p-header__address">〒166-0001 東京都杉並区阿佐谷北7-3-1</div>
+          <div class="p-header__tel"><img src="../images/common/tel__icon.png" alt="電話のアイコン">03-1234-5678</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sp用 -->
+    <div class="sp-nav js-drawer-menu">
+      <ul class="sp-nav__items">
+        <li class="sp-nav__item"><a href="index.html"><img src="../images/common/icon-01.png" alt="">ホーム</a></li>
+        <li class="sp-nav__item"><a href="page-about.html"><img src="../images/common/icon-02.png" alt="">当院について</a>
+        </li>
+        <li class="sp-nav__item"><a href="page-medical.html"><img src="../images/common/icon-03.png" alt="">診療案内</a>
+        </li>
+        <li class="sp-nav__item"><a href="page-staff.html"><img src="../images/common/icon-04.png" alt="">スタッフ紹介</a>
+        </li>
+        <li class="sp-nav__item"><a href="archive.html"><img src="../images/common/icon-05.png" alt="">スタッフブログ</a></li>
+        <li class="sp-nav__item"><a href="page-contact.html"><img src="../images/common/icon-07.png" alt="">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="l-section-header p-section-header c-section-header p-staff-blog-top">
+    <div class="c-section-header__inner p-staff-blog-top__inner">
+      <div class="c-section-header__contents p-staff-blog-top__bg">
+        <div class="c-section-header__content">
+          <div class="c-section-header__title">スタッフブログ</div>
+          <div class="c-section-header__en-title">staff blog</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- パンくずリスト -->
+  <div class="c-creadcrumb">
+    <div class="l-inner">
+      <div class="c-creadcrumb__title">ホーム　>　スタッフブログ</div>
+    </div>
+  </div>
+
+  <div class="l-staff-blog p-staff-blog">
+    <div class="p-staff-blog__inner l-inner">
+      <div class="p-staff-blog__contents">
+        <div class="p-staff-blog__content">
+          <ul class="p-staff-blog__items">
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <span class="p-top-blog__item-new">new</span>
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <span class="p-top-blog__item-new">new</span>
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+            <li class="p-staff-blog__item">
+              <a href="#">
+                <div class="p-staff-blog__img">
+                  <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+
+                </div>
+                <div class="p-staff-blog__content">
+                  <div class="p-staff-blog__category">お知らせ</div>
+                  <p class="p-staff-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                  <time class="p-staff-blog__date" datetime="2020.02.14">2020.02.14</time>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <!-- ページネーション -->
+          <div class="l-staff-blog__pagination p-staff-blog__pagination c-pagination">
+            <ul class="c-pagination__list">
+              <li class="c-pagination__item c-pagination__item-prev"><a href="#" class="c-pagination__link"><span class="c-pagination__icon--prev"></span>前へ</a></li>
+              <li class="c-pagination__item"><a href="#" class="c-pagination__link">1</a></li>
+              <li class="c-pagination__item"><a href="#" class="c-pagination__link">2</a></li>
+              <li class="c-pagination__item"><a href="#" class="c-pagination__link">3</a></li>
+              <li class="c-pagination__item u-desktop"><a href="#" class="c-pagination__link">4</a></li>
+              <li class="c-pagination__item u-desktop"><a href="#" class="c-pagination__link">5</a></li>
+              <li class="c-pagination__item u-desktop"><a href="#" class="c-pagination__link">6</a></li>
+              <li class="c-pagination__item"><a href="#" class="c-pagination__link">…</a></li>
+              <li class="c-pagination__item"><a href="#" class="c-pagination__link">20</a></li>
+              <li class="c-pagination__item c-pagination__item-next"><a href="#" class="c-pagination__link">次へ<span class="c-pagination__icon--next"></span></a></li>
+            </ul>
+          </div>
+          
+
+          <!-- ページネーション -->
+        </div>
+
+        <div class="l-staff-clinic p-staff-clinic">
+          <div class="p-staff-clinic__wrapper">
+            <div class="p-staff-clinic__title c-staff-title">クリニックの紹介</div>
+            <div class="p-staff-clinic__img">
+              <img src="../images/common/staff-clinic__img.jpg" alt="">
+            </div>
+            <div class="p-staff-clinic__sub-title">みなみ歯科クリニック</div>
+            <p class="p-staff-clinic__text">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</p>
+            <div class="p-staff-clinic__link">
+              <a href="#">当院について</a>
+            </div>
+          </div>
+
+
+          <div class="l-new-articles p-new-articles">
+            <div class="p-new-articles__title c-staff-title">新着記事</div>
+            <ul class="p-new-articles__items p-widget-blog__items">
+              <li class="p-widget-blog__item">
+                <a href="#">
+                  <div class="p-widget-blog__img">
+                    <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                  </div>
+                  <div class="p-widget-blog__content">
+                    <div class="p-widget-blog__category">お知らせ</div>
+                    <p class="p-widget-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                    <time class="p-widget-blog__date" datetime="2020.02.14">2020.02.14</time>
+                  </div>
+                </a>
+              </li>
+              <li class="p-widget-blog__item">
+                <a href="#">
+                  <div class="p-widget-blog__img">
+                    <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                  </div>
+                  <div class="p-widget-blog__content">
+                    <div class="p-widget-blog__category">お知らせ</div>
+                    <p class="p-widget-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                    <time class="p-widget-blog__date" datetime="2020.02.14">2020.02.14</time>
+                  </div>
+                </a>
+              </li>
+              <li class="p-widget-blog__item">
+                <a href="#">
+                  <div class="p-widget-blog__img">
+                    <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                  </div>
+                  <div class="p-widget-blog__content">
+                    <div class="p-widget-blog__category">お知らせ</div>
+                    <p class="p-widget-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                    <time class="p-widget-blog__date" datetime="2020.02.14">2020.02.14</time>
+                  </div>
+                </a>
+              </li>
+              <li class="p-widget-blog__item">
+                <a href="#">
+                  <div class="p-widget-blog__img">
+                    <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                  </div>
+                  <div class="p-widget-blog__content">
+                    <div class="p-widget-blog__category">お知らせ</div>
+                    <p class="p-widget-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                    <time class="p-widget-blog__date" datetime="2020.02.14">2020.02.14</time>
+                  </div>
+                </a>
+              </li>
+              <li class="p-widget-blog__item">
+                <a href="#">
+                  <div class="p-widget-blog__img">
+                    <img src="../images/common/top-blog__img-sp.jpg" alt="ブログ画像01">
+                  </div>
+                  <div class="p-widget-blog__content">
+                    <div class="p-widget-blog__category">お知らせ</div>
+                    <p class="p-widget-blog__title">記事のタイトルが入ります。記事のタイトルが入ります…</p>
+                    <time class="p-widget-blog__date" datetime="2020.02.14">2020.02.14</time>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="l-staff-category p-staff-category">
+            <div class="p-staff-category__title c-staff-title">カテゴリー</div>
+            <ul class="p-staff-category__items">
+              <li class="p-staff-category__item">
+                <a href="#">テキストテキスト</a>
+              </li>
+              <li class="p-staff-category__item">
+                <a href="#">テキストテキスト</a>
+              </li>
+              <li class="p-staff-category__item">
+                <a href="#">テキストテキスト</a>
+              </li>
+              <li class="p-staff-category__item">
+                <a href="#">テキストテキスト</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="l-footer-top p-footer-top"></div>
+  <footer class="l-footer p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__box">
+        <div class="p-footer__contents">
+          <div class="p-footer__contents-box">
+            <div class="p-footer__logo">
+              <img src="../images/common/header-logo-01-sp.png" alt="ロゴ画像">
+            </div>
+            <address class="p-footer__address">
+              <p class="p-footer__number">〒166-0001</p>
+              <p class="p-footer__description">東京都杉並区阿佐谷北7-3-1</p>
+            </address>
+            <div class="p-footer__tel-box">
+              <div class="p-footer__tel"><span></span>03-1234-5678</div>
+              <div class="p-footer__time">(年中無休 AM9:00〜PM22:00)</div>
+            </div>
+
+            <div class="p-footer__buttons">
+              <div class="p-footer__button p-footer__button--blue">
+                <a href=""><span></span>WEB予約
+
+                </a>
+              </div>
+              <div class="p-footer__button p-footer__button--white">
+                <a href=""><span></span>お問い合わせ</a>
+              </div>
+            </div>
+
+            <div class="p-footer__time-img">
+              <img src="../images/common/medical-time-pc.png" alt="診療時間">
+            </div>
+          </div>
+          <div class="p-footer__map-box">
+            <div class="p-footer__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.258025171945!2d139.63110204368056!3d35.7107459556167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed8bdb61f3bd%3A0xe49437718da39f9f!2z44K744OW44OzLeOCpOODrOODluODsyDmnYnkuKbpmL_kvZDosLfljJfvvJHkuIHnm67lupc!5e0!3m2!1sja!2sjp!4v1683327326872!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <ul class="p-footer__nav-items">
+          <li class="p-footer__nav-item">
+            <div class="p-footer__nav-item-box">
+              <div class="p-footer__nav-item-header">TOP</div>
+            </div>
+          </li>
+          <li class="p-footer__nav-item">
+            <div class="p-footer__nav-item-box">
+              <div class="p-footer__nav-item-header">当院について</div>
+              <div class="p-footer__nav-item-body">
+                <a href="page-about.html#about-1"><span class="p-footer__icon"></span>ポリシーと特徴</a>
+              </div>
+              <div class="p-footer__nav-item-body">
+                <a href="#"><span class="p-footer__icon"></span>当院の様子</a>
+              </div>
+            </div>
+          </li>
+          <li class="p-footer__nav-item">
+            <div class="p-footer__nav-item-box">
+              <div class="p-footer__nav-item-header">スタッフ紹介</div>
+              <div class="p-footer__nav-item-body">
+                <a href="#"><span class="p-footer__icon"></span>院長のあいさつ</a>
+              </div>
+              <div class="p-footer__nav-item-body">
+                <a href="#"><span class="p-footer__icon"></span>スタッフ</a>
+              </div>
+              <div class="p-footer__nav-item-body">
+                <a href="#"><span class="p-footer__icon"></span>スタッフブログ</a>
+              </div>
+            </div>
+          </li>
+          <li class="p-footer__nav-item">
+            <div class="p-footer__nav-item-box">
+              <div class="p-footer__nav-item-header">診療内容</div>
+              <div class="p-footer__nav-item-content">
+                <div class="p-footer__nav-item-body p-footer__nav-item-body--box">
+                  <a href="#"><span class="p-footer__icon"></span>一般歯科</a>
+                </div>
+                <div class="p-footer__nav-item-body">
+                  <a href="#"><span class="p-footer__icon"></span>矯正歯科</a>
+                </div>
+              </div>
+              <div class="p-footer__nav-item-content">
+                <div class="p-footer__nav-item-body p-footer__nav-item-body--box">
+                  <a href="#"><span class="p-footer__icon"></span>小児歯科</a>
+                </div>
+                <div class="p-footer__nav-item-body">
+                  <a href="#"><span class="p-footer__icon"></span>ホワイトニング</a>
+                </div>
+              </div>
+              <div class="p-footer__nav-item-content">
+                <div class="p-footer__nav-item-body p-footer__nav-item-body--box">
+                  <a href="#"><span class="p-footer__icon"></span>予防歯科</a>
+                </div>
+                <div class="p-footer__nav-item-body">
+                  <a href="#"><span class="p-footer__icon"></span>口腔外科</a>
+                </div>
+              </div>
+              <div class="p-footer__nav-item-content">
+                <div class="p-footer__nav-item-body p-footer__nav-item-body--box">
+                  <a href="#"><span class="p-footer__icon"></span>入れ歯</a>
+                </div>
+                <div class="p-footer__nav-item-body">
+                  <a href="#"><span class="p-footer__icon"></span>レーザー治療</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="p-footer__nav-item">
+            <div class="p-footer__nav-item-box">
+              <div class="p-footer__nav-item-header">お問い合わせ</div>
+              <div class="p-footer__nav-item-body">
+                <a href="page-contact.html"><span class="p-footer__icon"></span>お問い合わせフォーム</a>
+              </div>
+              <div class="p-footer__nav-item-body">
+                <a href="page-reservation.html"><span class="p-footer__icon"></span>WEB予約</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="p-footer__copyright">
+        <small class="p-footer__copyright-text">&copy;2020-2021 みなみ歯科クリニック</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 画面右追従 -->
+  <a class="c-web-reservation-btn" href="page-reservation.html">
+    <img src="../images/common/icon-pc-pc.svg" alt="パソコンのアイコン">
+    <div class="c-web-reservation-btn__text">WEB予約<br>はこちら</div>
+  </a>
+
+  <!-- フッター下部追従 -->
+  <div class="c-banner-bottom">
+    <div class="c-banner-bottom__inner l-inner">
+      <div class="c-banner-bottom__contents">
+        <div class="c-banner-bottom__tel-box">
+          <a href="tel:03-1234-5678">
+            <div class="c-banner-bottom__tel"><span></span>03-1234-5678</div>
+            <div class="c-banner-bottom__time">(年中無休 AM9:00〜PM22:00)</div>
+          </a>
+        </div>
+        <div class="c-banner-bottom__web-reservation-box">
+          <a href="page-reservation.html">
+            <div class="c-banner-bottom__web-reservation-img">
+              <img src="../src/images/common/pc-tab-icon.png" alt="パソコンのアイコン">
+            </div>
+            <div class="c-banner-bottom__web-reservation">WEB予約<br><span>はこちら</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- スムーススクロール -->
+  <div class="c-to-top">
+    <a href="#top"></a>
+  </div>
+
+</body>
+
+</html>

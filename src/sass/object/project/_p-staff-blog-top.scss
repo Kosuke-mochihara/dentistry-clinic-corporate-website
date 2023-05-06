@@ -1,0 +1,18 @@
+@use "global" as *;
+
+
+.p-staff-blog-top{
+
+}
+
+.p-staff-blog-top__inner{
+
+}
+
+.p-staff-blog-top__bg{
+  background-image: url(../images/common/archive__top-sp.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/archive__top-pc.jpg);
+  }
+}

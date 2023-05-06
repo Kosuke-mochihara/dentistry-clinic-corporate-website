@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.pc-nav {}
+
+.pc-nav__items {
+  display: flex;
+  gap: rem(24);
+}
+
+.pc-nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.pc-nav__item svg {
+  width: rem(24);
+  height: rem(24);
+  margin: auto;
+  display: block;
+}
+
+.pc-nav__item a {
+  font-size: rem(11);
+  font-weight: $bold;
+  position: relative;
+}
+
+.pc-nav__item a:hover svg {
+  fill: $main-color;
+}
+
+.pc-nav__item a:hover {
+  color: $main-color;
+}
+
+.pc-nav__item a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: rem(20);
+  height: rem(2);
+  bottom: rem(-8);
+}
+
+.pc-nav__item a:hover::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-8);
+  width: rem(20);
+  height: rem(2);
+  background-color: $main-color;
+}
+
+.pc-nav__item--main-color {
+  color: $main-color;
+}
+
+.pc-nav__item--main-color a {
+  position: relative;
+}
+
+.pc-nav__item--main-color a::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-8);
+  width: rem(20);
+  height: rem(2);
+  background-color: $main-color;
+}
+
+.pc-nav__item--main-color a svg {
+  fill: $main-color;
+}

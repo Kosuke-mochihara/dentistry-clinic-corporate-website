@@ -1,0 +1,141 @@
+@use "global" as *;
+
+.p-staff-blog {}
+
+.p-staff-blog__inner {}
+
+
+.p-staff-blog__contents {
+  margin-top: rem(56);
+
+  @include mq(md) {
+    display: flex;
+    gap: rem(30);
+  }
+}
+
+.p-staff-blog__content {
+
+  @include mq(md) {}
+}
+
+.p-staff-blog__items {
+  display: grid;
+  gap: rem(20);
+}
+
+.p-staff-blog__item {
+  position: relative;
+}
+
+.p-staff-blog__item:nth-child(n+2) {
+  margin-top: rem(20);
+
+  @include mq(md) {}
+}
+
+.p-staff-blog__item a {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  @include mq(md) {
+    border-radius: 20px;
+    gap: rem(20);
+  }
+}
+
+.p-staff-blog__item a:hover .p-staff-blog__img img {
+  transform: scale(1.1);
+
+}
+
+.p-staff-blog__item a:hover .p-staff-blog__title {
+  opacity: 0.8;
+  color: $main-color;
+}
+
+.p-staff-blog__img {
+  aspect-ratio: 244 / 153;
+  width: rem(244);
+  max-width: 100%;
+  overflow: hidden;
+
+}
+
+.p-staff-blog__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+
+}
+
+.p-staff-blog__content {
+  @include mq(md) {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.p-staff-blog__category {
+  font-size: rem(10);
+  padding: rem(4) rem(8);
+  color: #fff;
+  background-color: $main-color;
+  display: inline;
+  border-radius: 10px;
+
+  @include mq(md) {
+    font-size: rem(11);
+    padding: rem(8) rem(12);
+    border-radius: 14px;
+  }
+}
+
+.p-staff-blog__title {
+  margin-top: rem(8);
+  font-size: rem(14);
+  line-height: calc(20/14);
+
+  @include mq(md) {
+    margin-top: rem(16);
+    font-size: rem(16);
+  }
+}
+
+.p-staff-blog__date {
+  margin-top: rem(16);
+  font-size: rem(11);
+  color: #888;
+
+  @include mq(md) {
+    margin-top: rem(26);
+  }
+}
+
+.p-staff-blog__btn {
+  margin-top: rem(40);
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(75);
+  }
+}
+
+.p-staff-blog__btn a {
+  font-size: rem(14);
+  color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 24px;
+  padding: rem(13) rem(41);
+  display: inline-block;
+
+  @include mq(md) {
+    padding: rem(15) rem(47);
+
+  }
+}
+
+.p-staff-blog__pagination{
+  
+}

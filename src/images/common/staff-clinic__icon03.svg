@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #393939;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="グループ_10833" data-name="グループ 10833" transform="translate(-305 -7173)">
+    <g id="icon" transform="translate(307 7176.777)">
+      <path id="Icon_ionic-md-folder-open" data-name="Icon ionic-md-folder-open" class="cls-1" d="M21.188,9.217H12.716L10.723,6.75H4.243A2.106,2.106,0,0,0,2.25,8.943V21A2.106,2.106,0,0,0,4.243,23.2H21.188A2.106,2.106,0,0,0,23.182,21V11.41A2.106,2.106,0,0,0,21.188,9.217ZM21.687,21a.532.532,0,0,1-.5.548H4.243a.532.532,0,0,1-.5-.548V10.862H21.188a.532.532,0,0,1,.5.548Z" transform="translate(-2.25 -6.75)"/>
+    </g>
+    <rect id="長方形_23334" data-name="長方形 23334" class="cls-2" width="24" height="24" transform="translate(305 7173)"/>
+  </g>
+</svg>

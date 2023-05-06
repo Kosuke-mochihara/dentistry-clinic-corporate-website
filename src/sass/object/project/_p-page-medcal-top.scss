@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-page-medcal-top  {
+
+}
+
+.p-page-medcal-top__bg{
+  background-image: url(../images/common/page-medical__img-sp.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/page-medical__img-pc.jpg);
+  }
+}

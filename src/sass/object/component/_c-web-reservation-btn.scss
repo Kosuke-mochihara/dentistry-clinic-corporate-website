@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-web-reservation-btn {
+  display: none;
+
+  @include mq(md) {
+    background-color: $main-color;
+    border-radius: 20px 0 0 20px;
+    display: inline-block;
+    padding: rem(21) rem(17);
+    position: fixed;
+    top: 25%;
+    right: 0;
+    transform: translateY(-25%);
+    z-index: 9999;
+    transition: 0.3s;
+  }
+}
+
+.c-web-reservation-btn:hover {
+  background-color: #0060A0;
+  opacity: 1;
+}
+
+.c-web-reservation-btn img {
+  width: rem(49);
+  height: rem(29);
+
+}
+
+.c-web-reservation-btn__text {
+  font-size: rem(14);
+  margin-top: rem(12);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+

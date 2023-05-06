@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.swiper-container {
+  height: 100vh;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: rem(10);
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  background-color: $main-color;
+  border-radius: 50%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: rem(-18);
+  bottom: rem(-23);
+
+  @include mq(md) {
+    left: rem(-25);
+  }
+}
+
+.swiper-button-next {
+  background-image: url('../images/common/arrow-right.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(50);
+  height: rem(50);
+  right: rem(-22);
+}
+
+.swiper-button-prev {
+  background-image: url('../images/common/arrow-left.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(50);
+  height: rem(50);
+  left: rem(-23);
+}
+
+
+
+

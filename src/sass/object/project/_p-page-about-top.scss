@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-page-about-top__bg {
+  background-image: url(../images/common/page-about__top-sp.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/page-about__top-pc.jpg);
+  }
+}

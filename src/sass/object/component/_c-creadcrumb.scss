@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-creadcrumb {
+  margin-top: rem(12);
+}
+
+.c-creadcrumb__title{
+  @include mq(md){
+
+  }
+}

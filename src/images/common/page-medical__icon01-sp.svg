@@ -1,0 +1,20 @@
+<svg id="tag-01-sp" xmlns="http://www.w3.org/2000/svg" width="80" height="60" viewBox="0 0 80 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1391e6;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 14px;
+        font-family: HiraginoSans-W3, Hiragino Sans;
+        letter-spacing: 0.08em;
+      }
+    </style>
+  </defs>
+  <g id="tag-01-sp-2" data-name="tag-01-sp">
+    <path id="パス_43827" data-name="パス 43827" class="cls-1" d="M0,0H80V60L41.027,47.755,0,60Z"/>
+    <text id="保険対象" class="cls-2" transform="translate(40 31)"><tspan x="-29.68" y="0">保険対象</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+@use "global" as *;
+
+
+.p-page-reservation {}
+
+.p-page-reservation__inner {
+  width: rem(778);
+  max-width: 100%;
+  margin: auto;
+}
+
+.p-page-reservation__contents {}
+
+.p-page-reservation__content {}
+
+.p-page-reservation__title {
+  font-size: rem(20);
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  line-height: calc(32 / 20);
+
+  @include mq(md) {
+    font-size: rem(28);
+    font-weight: bold;
+    line-height: calc(40 / 28);
+    letter-spacing: 0.08em;
+  }
+}
+
+.p-page-reservation__title {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(42);
+  }
+}
+
+.p-page-reservation__tel-box {
+  text-align: left;
+  color: $main-color;
+  margin-top: rem(28);
+}
+
+.p-page-reservation__tel-box-time {
+  @include mq(md) {
+    margin-left: rem(45);
+  }
+}
+
+.p-page-reservation__tel {
+  font-size: rem(32);
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+
+
+.p-page-reservation__text {
+  margin-top: rem(28);
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+
+
+.p-page-reservation__section-box {
+  margin-top: rem(100);
+
+  @include mq(md) {
+    margin-top: rem(160);
+  }
+}

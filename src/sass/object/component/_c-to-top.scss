@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.c-to-top {
+  position: fixed;
+  right: rem(10);
+  bottom: rem(100);
+  z-index: 500;
+
+  @include mq(md){
+    right: rem(20);
+    bottom: rem(40);
+  }
+}
+
+.c-to-top a {
+display: block;
+background-image: url(../images/common/top-to-btn.png);
+background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+width: rem(52);
+height: rem(52);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.c-to-top a span {
+  position: absolute;
+  color: #fff;
+
+}

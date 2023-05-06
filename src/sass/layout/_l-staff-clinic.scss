@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-staff-clinic {
+  margin-top: rem(100);
+
+  @include mq(md){
+    margin-top: 0;
+  }
+}
