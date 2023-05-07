@@ -56,14 +56,16 @@
 .c-banner-bottom__web-reservation-box {
   color: #fff;
   background-color: $main-color;
-  padding: rem(8) rem(16) rem(8);
+  padding: rem(8) rem(11) rem(8);
   border-radius: 8px;
+  text-align: center;
 }
 
 .c-banner-bottom__web-reservation-box a {
   display: flex;
   align-items: center;
   gap: rem(11);
+  font-weight: bold;
 }
 
 .c-banner-bottom__web-reservation-img {

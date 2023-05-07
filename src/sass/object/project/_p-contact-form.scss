@@ -33,6 +33,12 @@
   padding-bottom: rem(28);
 }
 
+.p-contact-form__label-box{
+  @include mq(md) {
+    flex: 0 0 rem(240);
+  }
+}
+
 .p-contact-form__label {
   @include mq(md) {
     flex: 0 0 rem(240);

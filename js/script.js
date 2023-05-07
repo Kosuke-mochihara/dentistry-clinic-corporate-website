@@ -47,47 +47,50 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-    //ナビバートグル
-    $('.js-hamburger').on('click', function () {
-      if ($('.js-hamburger').hasClass('is-open')) {
-        $('.js-drawer-menu').fadeOut();
-        $(this).removeClass('is-open');
-      } else {
-        $('.js-drawer-menu').fadeIn();
-        $(this).addClass('is-open');
-      }
-    });
+  //ナビバートグル
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      $('.js-drawer-menu').fadeOut();
+      $(this).removeClass('is-open');
+    } else {
+      $('.js-drawer-menu').fadeIn();
+      $(this).addClass('is-open');
+    }
+  });
 
-    //  Swiper 
-
-      var swiper = new Swiper(".js-top-mv-swiper", {
-        slidesPerView: 1,
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-          },
-        speed: 1000, // スライドのアニメーション速度を指定
-        effect: 'fade', // フェードイン・アウトのエフェクトを指定
-      });
-
+  //  トップページ Swiper 
+  var swiper = new Swiper(".js-top-mv-swiper", {
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 1000, // スライドのアニメーション速度を指定
+    effect: 'fade', // フェードイン・アウトのエフェクトを指定
+  });
 
 
-
-
-
-
-
-
+// ブログページ swiper
+  const swiper1 = new Swiper(".js-blog-swiper", {
+    loop: true, // ループ有効
+    slidesPerView: 1, // 一度に表示する枚数
+    speed: 6000, // ループの時間
+    allowTouchMove: false, // スワイプ無効
+    autoplay: {
+      delay: 0, // 途切れなくループ
+      reverseDirection: false, // 逆方向有効化
+    },
+  });
 
 
 });

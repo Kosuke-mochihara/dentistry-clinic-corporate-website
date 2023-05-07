@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-breadcrumb {
+  margin-top: rem(12);
+}
+
+.c-breadcrumb__inner.l-inner {
+  width: calc(355/375) * 100%;
+  @include mq(md) {
+    width: calc(1160/1280) * 100%;
+    max-width: 100%;
+  }
+}
+
+.c-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  font-size: rem(12);
+}
+
+.c-breadcrumb__item:after {
+  content: '>';
+  padding: 0 rem(8);
+}
+
+.c-breadcrumb__item:last-child:after {
+  content: '';
+}
+
+
+.c-breadcrumb__item a:hover {
+  opacity: 0.8;
+}
+
+.c-breadcrumb__link--accent{
+ color: #C2C2C2;
+}

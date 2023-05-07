@@ -119,7 +119,7 @@
 .p-top-blog__title {
   margin-top: rem(8);
   font-size: rem(14);
-  left: calc(20/14);
+  line-height: calc(20/14) * 100%;
 
   @include mq(md) {
     margin-top: rem(10);

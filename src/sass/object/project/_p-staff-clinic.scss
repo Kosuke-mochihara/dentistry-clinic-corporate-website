@@ -74,7 +74,7 @@
   display: inline-block; /* 線を行内要素として表示する */
   width: rem(8); /* 幅を0に指定する */
   height: rem(8); /* 高さを0に指定する */
-  rotate: 45deg; /* 45度回転させる */
+  transform: rotate(45deg); /* 45度回転させる */
   bottom: rem(5);
   right: rem(-10);
 }
