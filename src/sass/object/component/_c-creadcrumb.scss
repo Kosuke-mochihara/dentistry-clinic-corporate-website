@@ -4,8 +4,9 @@
   margin-top: rem(12);
 }
 
-.c-creadcrumb__title{
+.c-creadcrumb.l-inner{
   @include mq(md){
-
+    width: rem(1180);
+    max-width: 100%;
   }
 }

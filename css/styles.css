@@ -473,6 +473,13 @@ select::-ms-expand {
   margin-top: 0.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .c-creadcrumb.l-inner {
+    width: 73.75rem;
+    max-width: 100%;
+  }
+}
+
 .c-hamburger {
   z-index: 9999;
 }
@@ -2355,7 +2362,10 @@ input[type=radio]:checked::before {
 }
 
 .p-page-medical__item a:hover {
-  opacity: 0.8;
+  color: #fff;
+  background-color: #1391E6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .p-page-reservation__inner {
