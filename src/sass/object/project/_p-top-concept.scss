@@ -86,7 +86,7 @@
 
   .p-top-concept__content-box {
     @include mq(md) {
-      flex: 1 0 38%;
+      flex: 1 0 40%;
       padding-left: calc(138 / 1280) * 100%;
       padding-right: inherit;
     }
@@ -110,7 +110,7 @@
 
 
   @include mq(md) {
-    flex: 0 0 50%;
+    flex: 0 0 48%;
     margin-top: 0;
   }
 }
@@ -125,7 +125,7 @@
   padding: 0 rem(20);
 
   @include mq(md) {
-    flex: 1 0 38%;
+    flex: 1 0 40%;
     padding-right: calc(138 / 1280) * 100%;
     padding-left: rem(0);
   }

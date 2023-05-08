@@ -69,6 +69,36 @@
   margin-top: rem(20);
 }
 
+// フォントオーサム挿入 ここから
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
+  z-index: 1;
+}
+
+input[type="date"]::after {
+  content: '\f073';
+  font-family: 'Font Awesome 5 free';
+  font-weight: 900;
+  width: rem(20);
+  height: rem(20);
+  position: absolute;
+  top: calc(50% - 2px);
+  right: rem(10);
+  transform: translateY(-50%);
+}
+// フォントオーサム挿入 ここまで
+
 .p-contact-form__input,
 .p-contact-form__textarea {
   margin-top: rem(12);

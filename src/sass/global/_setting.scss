@@ -28,6 +28,13 @@ body {
   color: #393939;
 }
 
+// spナビゲーション時固定
+body.fixed {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 // フォントウェイト
 $regular: 300;
 $normal: 400;
@@ -85,6 +92,7 @@ $mediaquerys: (
 //768px以上を表示
 .u-desktop {
   display: none;
+
   @include mq("md") {
     display: block;
   }

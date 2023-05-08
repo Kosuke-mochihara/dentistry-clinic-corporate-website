@@ -80,17 +80,42 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-// ブログページ swiper
-  const swiper1 = new Swiper(".js-blog-swiper", {
+  // ブログページ swiper
+  const swiper1 = new Swiper(".js-swiper-blog", {
     loop: true, // ループ有効
-    slidesPerView: 1, // 一度に表示する枚数
     speed: 6000, // ループの時間
     allowTouchMove: false, // スワイプ無効
     autoplay: {
       delay: 0, // 途切れなくループ
       reverseDirection: false, // 逆方向有効化
     },
+    // スライドの表示枚数：500px未満の場合
+    slidesPerView: 2,
+    breakpoints: {
+      // スライドの表示枚数：500px以上の場合
+      768: {
+        slidesPerView: 4,
+      }
+    }
   });
+
+  // spナビゲーション時固定
+  $(function () {
+    var state = false;
+    var pos;
+    $('.js-hamburger').click(function () {
+      if (state == false) {
+        pos = $(window).scrollTop();
+        $('body').addClass('fixed').css({ 'top': -pos });
+        state = true;
+      } else {
+        $('body').removeClass('fixed').css({ 'top': 0 });
+        window.scrollTo(0, pos);
+        state = false;
+      }
+    });
+  });
+
 
 
 });
