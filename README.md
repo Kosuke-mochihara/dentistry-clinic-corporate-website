@@ -21,3 +21,4 @@
 - rem記述を前提としています。
 - ルートフォントをvwで設定していることからPCサイズのレイアウトをタブレットで表示させることが出来ます（remで書いた場合のみ）。
 # dentistry-clinic-corporate-website
+# dentistry-clinic-corporate-website
