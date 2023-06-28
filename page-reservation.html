@@ -17,17 +17,7 @@
   <meta property="og:site_name" content="みなみ歯科クリニック" />
   <meta property="og:description" content="みなみ歯科クリニックのディスクリプションがここに入ります。" />
   <meta name=”robots” content=”noindex”>
-
-
-
-
-
-
-
   <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
-
-
-
   <!-- ファビコン -->
   <link rel="shortcut icon" href="../images/common/favicon.svg" />
   <!-- フォント -->
@@ -40,6 +30,9 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
+  <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script defer src="./mailform-reservation/js/mailform-js.php"></script>
+  <script defer src="./mailform-reservation/js/jquery.autoKana.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- スワイパー -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -212,115 +205,83 @@
       <div class="section__box p-page-reservation__section-box">
         <h2 class="p-page-reservation__section-title section__title section__title--accent">予約フォーム</h2>
       </div>
+      <form class="p-page-contact__form p-contact-form l-contact-form" action="./mailform-reservation/php/mailform.php" method="post" id="mail_form">
+	
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">名前<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="text" name="name_1" value="" placeholder="山田&#12288;太郎" /></dd>
+        </dl>
+        
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">フリガナ<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="text" name="read_1" value="" placeholder="ヤマダ&#12288;タロウ"/></dd>
+        </dl>
 
-      <form class="p-contact-form">
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="name">お名前<span class="p-contact-form__required">必須</span></label>
-          <input type="text" id="name" class="p-contact-form__input" placeholder="山田 太郎" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="kana">フリガナ<span class="p-contact-form__required">必須</span></label>
-          <input type="text" id="kana" class="p-contact-form__input" placeholder="ヤマダ タロウ" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="tel">電話番号<span class="p-contact-form__required">必須</span></label>
-          <input type="tel" id="tel" class="p-contact-form__input" placeholder="000-0000-0000" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="e-mail">メールアドレス<span
-              class="p-contact-form__required">必須</span></label>
-          <input type="email" id="e-mail" class="p-contact-form__input" placeholder="example@example.com" required>
-        </div>
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">電話番号<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="tel" name="phone" value="" placeholder="000-0000-0000"/></dd>
+        </dl>
+        
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">メールアドレス<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="email" name="mail_address" value="" placeholder="xxx@example.com"/></dd>
+        </dl>
 
-        <div class="p-contact-form__item">
-          <span class="p-contact-form__label">初診/再診<span class="p-contact-form__required">必須</span></span>
-          <div class="p-contact-form__radio-group">
-            <div class="p-contact-form__radio-group-item">
-              <input type="radio" id="initial-consultation" name="visit-type" value="first-time" checked>
-              <label for="initial-consultation">初診</label>
-            </div>
-            <div class="p-contact-form__radio-group-item">
-              <input type="radio" id="revisit" name="visit-type" value="repeat-visit">
-              <label for="revisit">再診</label>
-            </div>
-          </div>
-        </div>
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">初診/再診<span>必須</span></dt>
+          <dd class="p-contact-form__dd p-contact-form__dd--mt20 required">
+            <label><input type="radio" name="visit" value="初診" checked><span>初診</span></label>
+            <label><input type="radio" name="visit" value="再診"><span>再診</span></label>
+          </dd>
+        </dl>
         
 
-        <!-- チェックボックス -->
-        <div class="p-contact-form__item">
-          <div class="p-contact-form__label-box">
-            <label class="p-contact-form__label">診療内容<span class="p-contact-form__required">必須</span>
-            </label>
-            <p class="p-contact-form__detail">※(複数選択可)</p>
-          </div>
-          <div class="p-contact-form__content">
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox1" name="checkbox1" value="value1">
-              <label for="checkbox1">虫歯</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox2" name="checkbox2" value="value">
-              <label for="checkbox2">被せ物がとれた</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox3" name="checkbox3" value="value1">
-              <label for="checkbox3">矯正歯科</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox4" name="checkbox4" value="value1">
-              <label for="checkbox4">咬み合わせ</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox5" name="checkbox5" value="value1">
-              <label for="checkbox5">歯周病</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox6" name="checkbox6" value="value1">
-              <label for="checkbox6">小児歯科</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox7" name="checkbox7" value="value1">
-              <label for="checkbox7">入れ歯</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox8" name="checkbox8" value="value1">
-              <label for="checkbox8">インプラント</label>
-            </div>
-            <div class="p-contact-form__checkbox">
-              <input type="checkbox" id="checkbox9" name="checkbox9" value="value1">
-              <label for="checkbox9">その他</label>
-            </div>
-          </div>
-        </div>
+      <dl class="p-contact-form__item">
+        <dt class="p-contact-form__dt">診療案内<span>必須</span></dt>
+        <dd class="p-contact-form__dd p-contact-form__dd--checkbox required">
+          <label><input type="checkbox" name="kind[]" value="虫歯"><span>虫歯</span></label>
+          <label><input type="checkbox" name="kind[]" value="被せ物がとれた"><span>被せが取れた</span></label>
+          <label><input type="checkbox" name="kind[]" value="矯正歯科"><span>矯正歯科</span></label>
+          <label><input type="checkbox" name="kind[]" value="噛み合わせ"><span>噛み合わせ</span></label>
+          <label><input type="checkbox" name="kind[]" value="歯周病"><span>歯周病</span></label>
+          <label><input type="checkbox" name="kind[]" value="小児歯科"><span>小児歯科</span></label>
+          <label><input type="checkbox" name="kind[]" value="入れ歯"><span>入れ歯</span></label>
+          <label><input type="checkbox" name="kind[]" value="インプラント"><span>インプラント</span></label>
+          <label><input type="checkbox" name="kind[]" value="その他"><span>その他</span></label>
+        </dd>
+      </dl>
 
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="contact-method">ご連絡方法<span
-              class="p-contact-form__required">必須</span></label>
-          <select id="contact-method" class="p-contact-form__input" required>
-            <option value="">メール</option>
-            <option value="電話">電話</option>
-            <option value="その他">その他</option>
-          </select>
-        </div>
+       <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">ご連絡方法<span>必須</span></dt>
+          <dd class="p-contact-form__dd required">
+            <select name="product">
+              <option value="メール">メール</option>
+              <option value="電話">電話</option>
+              <option value="訪問">訪問</option>
+            </select>
+          </dd>
+        </dl>
+        
+       <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">希望日</dt>
+          <dd class="p-contact-form__dd">
+            <input type="date" id="date1" name="schedule" class="p-contact-form__input">
+            <input type="date" id="date2" name="schedule" class="p-contact-form__input">
+            <input type="date" id="date3" name="schedule" class="p-contact-form__input">
+          </dd>
+        </dl>
 
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="date1">希望日</label>
-          <div class="p-contact-form__input-items">
-            <input type="date" id="date1" class="p-contact-form__input" required>
-            <input type="date" id="date2" class="p-contact-form__input" required>
-            <input type="date" id="date3" class="p-contact-form__input" required>
-          </div>
-        </div>
-
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="message">お問い合わせ内容<span
-              class="p-contact-form__required">必須</span></label>
-          <textarea id="message" class="p-contact-form__textarea" rows="4" placeholder="ご自由にご記入ください"
-            required></textarea>
-        </div>
-        <button type="submit" class="p-contact-form__submit"
-        onclick="location.href='page-reservation-thanks.html'">送信</button>
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">お問い合わせの内容<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><textarea name="contents" cols="40" rows="5" placeholder="ご自由にご記入ください。"></textarea></dd>
+        </dl>
+      
+        
+        <p id="form_submit" class="p-contact-form__btn">
+          <input type="button" id="form_submit_button" value="送&#12288;信" />
+        </p>
+      
+        
       </form>
     </div>
   </div>

@@ -57,10 +57,9 @@
 
 .p-staff-blog__img {
   aspect-ratio: 244 / 153;
-  width: rem(244);
-  max-width: 100%;
   overflow: hidden;
-
+  flex: 0 0 rem(244);
+  max-width: 100%;
 }
 
 .p-staff-blog__img img {

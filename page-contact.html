@@ -29,7 +29,10 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script defer src="./mailform-contact/js/mailform-js.php"></script>
+  <script defer src="./mailform-contact/js/jquery.autoKana.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- スワイパー -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
@@ -184,34 +187,39 @@
         <h2 class="p-page-contact__section-title section__title section__title--accent">お問い合わせ<br>
           フォーム</h2>
       </div>
+      
+      <form class="p-page-contact__form p-contact-form l-contact-form" action="./mailform-contact/php/mailform.php" method="post" id="mail_form">
+	
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">名前<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="text" name="name_1" value="" placeholder="山田&#12288;太郎" /></dd>
+        </dl>
+        
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">フリガナ<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="text" name="read_1" value="" placeholder="ヤマダ&#12288;タロウ"/></dd>
+        </dl>
+        
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">電話番号<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="tel" name="phone" value="" placeholder="000-0000-0000"/></dd>
+        </dl>
+        
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">メールアドレス<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><input type="email" name="mail_address" value="" placeholder="xxx@example.com"/></dd>
+        </dl>
 
-      <form class="p-contact-form">
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="name">お名前<span class="p-contact-form__required">必須</span></label>
-          <input type="text" id="name" class="p-contact-form__input" placeholder="山田 太郎" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="kana">フリガナ<span class="p-contact-form__required">必須</span></label>
-          <input type="text" id="kana" class="p-contact-form__input" placeholder="ヤマダ タロウ" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="tel">電話番号<span class="p-contact-form__required">必須</span></label>
-          <input type="tel" id="tel" class="p-contact-form__input" placeholder="000-0000-0000" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="e-mail">メールアドレス<span
-              class="p-contact-form__required">必須</span></label>
-          <input type="email" id="e-mail" class="p-contact-form__input" placeholder="example@example.com" required>
-        </div>
-        <div class="p-contact-form__item">
-          <label class="p-contact-form__label" for="message">お問い合わせ内容<span
-              class="p-contact-form__required">必須</span></label>
-          <textarea id="message" class="p-contact-form__textarea" rows="4" placeholder="ご自由にご記入ください"
-            required></textarea>
-        </div>
-        <button type="submit" class="p-contact-form__submit" onclick="location.href='page-contact-thanks.html'">送信</button>
+        <dl class="p-contact-form__item">
+          <dt class="p-contact-form__dt">お問い合わせの内容<span>必須</span></dt>
+          <dd class="p-contact-form__dd required"><textarea name="contents" cols="40" rows="5" placeholder="ご自由にご記入ください。"></textarea></dd>
+        </dl>
+
+          <p id="form_submit" class="p-contact-form__btn">
+            <input type="button" id="form_submit_button" value="送&#12288;信" />
+          </p>
+        
       </form>
-
     </div>
   </section>
 
