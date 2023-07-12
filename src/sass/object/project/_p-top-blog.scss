@@ -77,6 +77,10 @@
 .p-top-blog__img {
   aspect-ratio: 133 / 101;
   overflow: hidden;
+
+  @include mq(md) {
+    border-radius: 20px 20px 0px 0px;
+  }
 }
 
 

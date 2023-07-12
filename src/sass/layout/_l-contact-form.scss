@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-contact-form {
+  margin-top: rem(68);
+
+  @include mq(md){
+    margin-top: rem(72);
+  }
+}
