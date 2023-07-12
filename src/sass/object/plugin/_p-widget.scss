@@ -1,0 +1,55 @@
+@use "global" as *;
+
+
+.p-widget h2 {
+  margin-top: rem(60);
+  font-size: rem(24);
+  font-weight: $bold;
+  position: relative;
+  padding-left: rem(34);
+  font-weight: bold;
+  padding-bottom: rem(8);
+  border-bottom: 1px solid #888;
+}
+
+.p-widget h2::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/staff-clinic__icon03.svg);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(24);
+  height: rem(24);
+  top: rem(7);
+  left: 0;
+}
+
+.p-widget ul {
+  margin-top: rem(20);
+  margin-left: rem(20);
+}
+
+.p-widget a {
+  padding-left: rem(12);
+  position: relative;
+  width: inherit;
+}
+
+.p-widget a:hover {
+  opacity: 0.8;
+}
+
+.p-widget a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/right-icon.png);
+  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(6);
+  height: rem(12);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

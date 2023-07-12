@@ -36,6 +36,7 @@
 .p-widget-blog__img {
   aspect-ratio: 120 / 90;
   overflow: hidden;
+  width: 50%;
 }
 
 .p-widget-blog__img img {
@@ -46,6 +47,7 @@
 }
 
 .p-widget-blog__content {
+  width: 50%;
   @include mq(md) {}
 }
 

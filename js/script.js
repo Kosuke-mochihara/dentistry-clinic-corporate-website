@@ -116,6 +116,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  // フリガナ自動入力ライブラリここから
+		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+			katakana: false
+		});
+		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+			katakana: false
+		});
+
+
+  // コンタクトフォーム カレンダークリック時色が変わる
+    $('.p-contact-forwpcf7 .requiredm__input').on('change', function(){
+      if($(this).val()){
+        $(this).css('color', '#333');
+      }else{
+        $(this).css('color', '#C2C2C2');
+      }
+    });
+
+ 
 
 
 });
+

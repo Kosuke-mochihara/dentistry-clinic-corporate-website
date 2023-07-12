@@ -4,16 +4,15 @@
 .p-staff-clinic {
 
   @include mq(md) {
-    width: rem(300);
+    flex: 0 0 rem(300);
   }
 }
 
-.p-staff-clinic__wrapper {}
+.p-staff-clinic__wrapper > 
 
 .p-staff-clinic__title {
   position: relative;
   padding-left: rem(34);
-
 }
 
 .p-staff-clinic__title::before {
@@ -25,6 +24,7 @@
   background-repeat: no-repeat;
   width: rem(24);
   height: rem(24);
+  top: rem(6);
   left: 0;
 }
 

@@ -1,0 +1,88 @@
+@use "global" as *;
+
+
+/*wp-pagenavi base*/
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  color: $main-color;
+  background-color: #fff;
+  border: 1px solid $main-color;
+  padding: rem(9)  rem(13);
+  margin: 0 rem(10);
+  white-space: nowrap;
+  border-radius: rem(3);
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+  color: #fff;
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  ;
+}
+
+.wp-pagenavi span.current {
+  color: #fff;
+  background-color: $main-color;
+  border: 1px solid $main-color;
+  font-weight: bold;
+}
+
+.wp-pagenavi .previouspostslink {
+  color: #fff;
+  background-color: $main-color;
+  position: relative;
+  display: inline-flex;
+  padding-left: rem(39);
+  width: rem(82);
+}
+
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .nextpostslink:hover {
+  opacity: 0.8;
+}
+
+
+.wp-pagenavi .nextpostslink {
+  color: #fff;
+  background-color: $main-color;
+  position: relative;
+  display: inline-flex;
+  width: rem(82);
+}
+
+.wp-pagenavi .previouspostslink::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/archive-arrow-left.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(14);
+  height: rem(14);
+  top: 50%;
+  left: rem(15);
+  transform: translateY(-50%);
+}
+
+.wp-pagenavi .nextpostslink::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/archive-arrow-right.png);
+  background-size: cover; //比率はそのままで拡張縮小、上下または左右が切り捨てになる。
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(14);
+  height: rem(14);
+  top: 50%;
+  right: rem(15);
+  transform: translateY(-50%);
+}
