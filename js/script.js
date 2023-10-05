@@ -36,7 +36,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
@@ -116,25 +115,72 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  // フリガナ自動入力ライブラリここから
-		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
-			katakana: false
-		});
-		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
-			katakana: false
-		});
-
-
   // コンタクトフォーム カレンダークリック時色が変わる
-    $('.p-contact-form__input').on('change', function(){
+    $('.p-contact-forwpcf7 .requiredm__input').on('change', function(){
       if($(this).val()){
         $(this).css('color', '#333');
       }else{
         $(this).css('color', '#C2C2C2');
       }
     });
-
-
-
-
 });
+
+
+
+// GSAP
+// 下から出てくるアニメーション
+document.addEventListener('DOMContentLoaded', function () {
+  let slideInElements = document.querySelectorAll('.js-slideIn');
+  slideInElements.forEach(function (slideInElement) {
+    gsap.fromTo(slideInElement,
+      {y:20, autoAlpha:0},
+      {
+        y:0,
+        autoAlpha:1,
+        delay:.5,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: slideInElement, // こちらも修正
+          start: 'top bottom',
+          markers: true,
+          toggleActions: 'play none none reverse'
+        }
+      }
+    );
+  });
+});
+
+
+// spナビの各リンクの動き
+document.addEventListener('DOMContentLoaded', function () {
+  let isAnimated = false;  // アニメーションの状態を追跡する変数
+
+  document.querySelector('.js-hamburger').addEventListener('click', function() {
+    if(!isAnimated) {
+      // アニメーションを表示する場合
+      gsap.fromTo('.js-sp-nav', 
+        {x:-20, autoAlpha:0}, 
+        {x:0, autoAlpha:1, delay:.3, duration: 0.5, ease: 'power3.inOut', stagger:.15 }
+      );
+    } else {
+      // アニメーションを即座に非表示にする場合
+      gsap.set('.js-sp-nav', {autoAlpha: 0});
+    }
+
+    // アニメーションの状態をトグル
+    isAnimated = !isAnimated;
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  let jsAbouts = document.querySelectorAll('.js-about');
+  gsap.fromTo(jsAbouts, {y: 20, autoAlpha:0}, {y: 0, autoAlpha:1, delay:.3, duration:.3, ease: 'power3.inOut', stagger:.1,scrollTrigger: {
+    trigger: jsAbouts, // こちらも修正
+    start: 'top bottom',
+    markers: true,
+    toggleActions: 'play none none reverse'
+  }});
+  });
+
