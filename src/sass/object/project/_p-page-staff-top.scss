@@ -1,15 +1,6 @@
 @use "global" as *;
 
-
-.p-page-staff-top{
-
-}
-
-.p-page-staff-top__inner{
-
-}
-
-.p-page-staff-top__bg{
+.p-page-staff-top__bg {
   background-image: url(../images/common/page-staff__top-sp.jpg);
 
   @include mq(md) {

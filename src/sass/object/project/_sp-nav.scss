@@ -31,8 +31,6 @@
 .sp-nav__item {
   width: 100%;
   border-top: 1px dotted #fff;
-
-  @include mq(md) {}
 }
 
 .sp-nav__item:last-child {
@@ -47,7 +45,6 @@
   vertical-align: bottom;
   margin-right: rem(14);
 }
-
 
 .sp-nav__item a {
   display: block;

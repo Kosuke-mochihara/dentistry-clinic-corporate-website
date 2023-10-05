@@ -25,54 +25,31 @@
   display: inline-block;
   padding-bottom: 5px;
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    background-color: $main-color;
-    width: rem(20);
-    height: rem(2);
-    left: calc(50% - 10px);
-    bottom: 0;
-    transform-origin: center top;
-    transform: scale(0, 1);
-    transition: transform .3s;
-  }
-
-  &:hover {
-    color: $main-color;
-
-    &::before {
-      transform-origin: center top;
-      transform: scale(1, 1);
-    }
-
-    svg {
-      fill: $main-color;
-    }
-
-  }
 }
 
+.pc-nav__item a::before {
+  position: absolute;
+  content: '';
+  background-color: $main-color;
+  width: rem(20);
+  height: rem(2);
+  left: calc(50% - 10px);
+  bottom: 0;
+  transform-origin: center top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
 
-// .pc-nav__item--main-color a {
-//   color: $main-color;
-//   position: relative;
+.pc-nav__item a:hover {
+  color: $main-color;
+}
 
-//   &::before {
-//     position: absolute;
-//     content: '';
-//     background-color: $main-color;
-//     width: rem(20);
-//     height: rem(2);
-//     left: calc(50% - 10px);
-//     bottom: 0;
-//     transform-origin: center top;
-//     transform: scale(1, 1);
-//     transition: transform .3s;
-//   }
+.pc-nav__item a:hover::before {
+  transform-origin: center top;
+  transform: scale(1, 1);
+}
 
-//   svg {
-//     fill: $main-color;
-//   }
-// }
+.pc-nav__item a:hover svg {
+  fill: $main-color;
+}
+

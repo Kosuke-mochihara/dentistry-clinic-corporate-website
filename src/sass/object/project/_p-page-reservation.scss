@@ -1,17 +1,10 @@
 @use "global" as *;
 
-
-.p-page-reservation {}
-
 .p-page-reservation__inner {
   width: rem(778);
   max-width: 100%;
   margin: auto;
 }
-
-.p-page-reservation__contents {}
-
-.p-page-reservation__content {}
 
 .p-page-reservation__title {
   font-size: rem(20);
@@ -53,14 +46,11 @@
   letter-spacing: 0.02em;
 }
 
-
-
 .p-page-reservation__text {
   margin-top: rem(28);
   font-size: rem(14);
   line-height: calc(24 / 14);
 }
-
 
 .p-page-reservation__section-box {
   margin-top: rem(100);

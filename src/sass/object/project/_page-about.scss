@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.p-page-about {
-
-}
-
-.p-page-about__inner {
-
-}
-
 .p-page-about__section-title {
   text-align: center;
 }
@@ -15,27 +7,18 @@
 .p-page-about__contents {
   margin-top: rem(40);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(60);
   }
 }
 
 .p-page-about__items {
   display: grid;
-  grid-template-columns: repeat(2 ,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: rem(11);
-  
-  @include mq(md){
-    grid-template-columns: repeat(3 ,1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
     gap: rem(24);
-
   }
-}
-
-.p-page-about__item {
-
-}
-
-.p-page-about__item img {
-
 }

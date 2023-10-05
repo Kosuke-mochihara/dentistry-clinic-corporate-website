@@ -1,15 +1,5 @@
 @use "global" as *;
 
-
-.p-page-staff {}
-
-.p-page-staff__inner {}
-
-.p-page-staff__contents {}
-
-.p-top-about__section-title {}
-
-
 .p-page-staff__content {
   margin-top: rem(40);
 
@@ -64,9 +54,7 @@
   }
 }
 
-
-
-.p-page-staff__career { 
+.p-page-staff__career {
   margin-top: rem(40);
 
   @include mq(md){
@@ -93,10 +81,6 @@
 .p-page-staff__career-list:nth-child(n+2) {
   margin-top: rem(20);
 }
-
-.p-page-staff__career-dt {}
-
-.p-page-staff__career-dd {}
 
 .p-page-staff__qualifications {
   margin-top: rem(40);

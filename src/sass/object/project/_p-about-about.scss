@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .p-about-about {
   position: relative;
   padding-top: rem(114);
@@ -18,23 +17,21 @@
   height: 100%;
   z-index: -100;
   background-image: url(../images/common/top-concept__bg-sp.png);
-  background-size: 157%; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-size: 157%;
   background-repeat: no-repeat;
   top: 0;
   left: rem(10);
   
   @include mq(md) {
     background-image: url(../images/common/top-concept__bg-pc.png);
-    background-size: 70%; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
-
-
+    background-size: 70%;
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
     z-index: -100;
     background-image: url(../images/common/top-concept__bg-sp.png);
-    background-size: 157%; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+    background-size: 157%;
     background-repeat: no-repeat;
     top: 0;
   }
@@ -78,7 +75,6 @@
     padding: 0;
   }
 }
-
 
 .p-about-about__img.concept-box__img {
   margin-top: rem(45);

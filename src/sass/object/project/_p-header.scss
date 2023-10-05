@@ -12,7 +12,6 @@
 
   @include mq(md) {
     height: rem(80);
-
   }
 }
 
@@ -23,12 +22,7 @@
   justify-content: space-between;
   width: rem(1200);
   max-width: 100%;
-
-  @include mq(md){
-
-  }
 }
-
 
 .p-header__contents {
   display: none;
@@ -36,7 +30,6 @@
   @include mq(lg) {
     display: flex;
     gap: rem(32);
-
   }
 }
 
@@ -62,8 +55,3 @@
   height: rem(28);
   display: inline-block;
 }
-
-
-
-
-

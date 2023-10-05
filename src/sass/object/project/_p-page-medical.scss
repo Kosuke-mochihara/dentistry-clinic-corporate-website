@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.p-page-medical {}
-
-.p-page-medical__inner {}
-
 .p-page-medical__content {
   width: rem(600);
   max-width: 100%;
@@ -22,8 +18,6 @@
     margin-top: rem(84);
   }
 }
-
-.p-page-medical___section-title {}
 
 .p-page-medical__sub-title {
   font-size: rem(14);

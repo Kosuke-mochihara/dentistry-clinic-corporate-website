@@ -1,8 +1,5 @@
 @use "global" as *;
 
-
-.p-top-mv {}
-
 .p-top-mv__inner.l-inner {
   width: rem(1200);
   max-width: 100%;
@@ -10,7 +7,6 @@
 
 .p-top-mv__wrapper {
   position: relative;
-
 }
 
 .p-top-mv__img {

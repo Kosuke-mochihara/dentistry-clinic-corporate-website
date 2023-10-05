@@ -1,12 +1,6 @@
 @use "global" as *;
 
-
-.p-top-concept {}
-
 .p-top-concept__contents {
-
-
-
   @include mq(md) {
     width: rem(1960);
     max-width: 100%;
@@ -50,7 +44,6 @@
   }
 }
 
-
 .p-top-concept__content {
   display: flex;
   flex-direction: column-reverse;
@@ -69,27 +62,26 @@
   }
 }
 
-
 .p-top-concept__content:nth-child(even) {
   @include mq(md) {
     flex-direction: row-reverse;
   }
+}
 
-  .p-top-concept__img {
-    margin-left: auto;
-    margin-right: inherit;
+.p-top-concept__content:nth-child(even) .p-top-concept__img {
+  margin-left: auto;
+  margin-right: inherit;
+}
 
-    img {
-      border-radius: 30px 0 0 30px;
-    }
-  }
+.p-top-concept__content:nth-child(even) .p-top-concept__img img {
+  border-radius: 30px 0 0 30px;
+}
 
-  .p-top-concept__content-box {
-    @include mq(md) {
-      flex: 1 0 40%;
-      padding-left: calc(138 / 1280) * 100%;
-      padding-right: inherit;
-    }
+.p-top-concept__content:nth-child(even) .p-top-concept__content-box {
+  @include mq(md) {
+    flex: 1 0 40%;
+    padding-left: calc(138 / 1280) * 100%;
+    padding-right: inherit;
   }
 }
 
@@ -108,7 +100,6 @@
   margin-right: auto;
   margin-top: rem(40);
 
-
   @include mq(md) {
     flex: 0 0 48%;
     margin-top: 0;
@@ -116,10 +107,8 @@
 }
 
 .p-top-concept__img img {
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 rem(30) rem(30) 0;
 }
-
-
 
 .p-top-concept__content-box {
   padding: 0 rem(20);
@@ -188,7 +177,6 @@
   border-radius: 24px;
   display: inline-block;
   transition: 0.3s;
-
 }
 
 .p-top-concept__btn a::after {

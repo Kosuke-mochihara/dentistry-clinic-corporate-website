@@ -1,13 +1,5 @@
 @use "global" as *;
 
-
-.p-top-blog {}
-
-.p-top-blog__inner {}
-
-
-.p-top-blog__section-title {}
-
 .p-top-blog__items {
   display: grid;
   gap: rem(20);
@@ -27,11 +19,11 @@
   display: flex;
   align-items: center;
   gap: rem(10);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: rem(0) rem(3) rem(6) rgba(0, 0, 0, 0.16);
   transition: 0.3s;
 
   @include mq(md) {
-    border-radius: 20px;
+    border-radius: rem(20);
     display: block;
   }
 }
@@ -46,7 +38,7 @@
   align-items: center;
   background-color: $accent-color2;
   text-transform: uppercase;
-  border-radius: 50px;
+  border-radius: rem(50);
   z-index: 100;
   width: rem(40);
   height: rem(40);
@@ -60,11 +52,8 @@
     top: rem(-20);
     left: rem(-10);
     font-size: rem(16);
-
   }
 }
-
-
 
 .p-top-blog__item a:hover {
   color: $main-color;
@@ -81,7 +70,7 @@
 
   @include mq(md) {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: rem(20) rem(20) 0 0;
   }
 }
 
@@ -93,14 +82,14 @@
   transition: 0.3s;
 
   @include mq(md) {
-    border-radius: 20px 20px 0px 0px;
+    border-radius: rem(20) rem(20) 0 0;
   }
 }
 
 .p-top-blog__content {
   @include mq(md) {
     padding: rem(24) rem(24) rem(14);
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 rem(20) rem(20);
 
   }
 }
@@ -111,13 +100,13 @@
   color: #fff;
   background-color: $main-color;
   display: inline;
-  border-radius: 10px;
+  border-radius: rem(10);
   position: relative;
 
   @include mq(md) {
     font-size: rem(11);
     padding: rem(8) rem(12);
-    border-radius: 14px;
+    border-radius: rem(14);
   }
 }
 
@@ -139,7 +128,6 @@
 
   @include mq(md) {
     margin-top: rem(14);
-
   }
 }
 
@@ -157,7 +145,7 @@
   font-size: rem(14);
   color: $main-color;
   border: 1px solid $main-color;
-  border-radius: 24px;
+  border-radius: rem(24);
   padding: rem(13) rem(41);
   display: inline-block;
   font-weight: bold;
@@ -202,5 +190,4 @@
   transform: translateY(-50%);
   right: rem(9);
   filter: brightness(0) invert(1);
-
 }

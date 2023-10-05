@@ -1,16 +1,12 @@
 @use "global" as *;
 
-
 .p-staff-clinic {
-
   @include mq(md) {
     flex: 0 0 rem(300);
   }
 }
 
-.p-staff-clinic__wrapper > 
-
-.p-staff-clinic__title {
+.p-staff-clinic__wrapper>.p-staff-clinic__title {
   position: relative;
   padding-left: rem(34);
 }
@@ -27,7 +23,6 @@
   top: rem(6);
   left: 0;
 }
-
 
 .p-staff-clinic__img {
   margin-top: rem(20);
@@ -67,17 +62,19 @@
 .p-staff-clinic__link a::after {
   position: absolute;
   content: "";
-  border-top: 1px solid $main-color; /* 上側に5ピクセルの線を引く */
-  border-right: 1px solid $main-color; /* 右側の線を消す */
-  border-bottom: 0; /* 下側の線を消す */
-  border-left: 0; /* 左側に5ピクセルの線を引く */
-  display: inline-block; /* 線を行内要素として表示する */
-  width: rem(8); /* 幅を0に指定する */
-  height: rem(8); /* 高さを0に指定する */
-  transform: rotate(45deg); /* 45度回転させる */
+  border-top: 1px solid $main-color;
+
+  border-right: 1px solid $main-color;
+  border-bottom: 0;
+  border-left: 0;
+  display: inline-block;
+  width: rem(8);
+  height: rem(8);
+  transform: rotate(45deg);
   bottom: rem(5);
   right: rem(-10);
 }
+
 .p-staff-clinic__link a:hover {
   opacity: 0.8;
 }

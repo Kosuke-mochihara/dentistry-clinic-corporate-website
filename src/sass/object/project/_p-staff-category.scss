@@ -1,7 +1,5 @@
 @use "global" as *;
 
-.p-staff-category {}
-
 .p-staff-category__title {
   position: relative;
   padding-left: rem(34);
@@ -18,7 +16,6 @@
   height: rem(24);
   left: 0;
 }
-
 
 .p-staff-category__items {
   padding-top: rem(20);
@@ -40,7 +37,7 @@
   content: "";
   background-image: url(../images/common/right-icon.png);
   background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   width: rem(6);
   height: rem(12);

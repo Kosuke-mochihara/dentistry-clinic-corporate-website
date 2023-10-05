@@ -1,11 +1,7 @@
 @use "global" as *;
 
-
-.p-page-contact {
-}
-
 .p-page-contact__inner.l-inner {
-  @include mq(md){
+  @include mq(md) {
     width: rem(778);
     max-width: 100%;
   }
@@ -15,14 +11,15 @@
   font-size: rem(14);
   line-height: calc(24 / 14);
 }
+
 .p-page-contact__text span {
-color: $accent-color2;
+  color: $accent-color2;
 }
 
-.p-page-contact__section-box{
+.p-page-contact__section-box {
   margin-top: rem(100);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }
@@ -31,7 +28,3 @@ color: $accent-color2;
   text-align: center;
   line-height: calc(28 / 20);
 }
-
-
-
-

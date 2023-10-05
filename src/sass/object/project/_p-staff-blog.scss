@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.p-staff-blog {}
-
-.p-staff-blog__inner {}
-
-
 .p-staff-blog__contents {
   margin-top: rem(56);
 
@@ -13,8 +8,6 @@
     gap: rem(30);
   }
 }
-
-.p-staff-blog__content {}
 
 .p-staff-blog__items {
   display: grid;
@@ -28,8 +21,6 @@
 .p-staff-blog__item:nth-child(n+2) {
   margin-top: rem(20);
 }
-
-
 
 .p-staff-blog__item a {
   display: flex;

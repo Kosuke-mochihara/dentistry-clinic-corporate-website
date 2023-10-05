@@ -1,10 +1,5 @@
 @use "global" as *;
 
-
-.p-staff-blog-archive {}
-
-.p-staff-blog-archive__inner {}
-
 .p-staff-blog-archive__contents {
   margin-top: rem(60);
 
@@ -13,8 +8,6 @@
     gap: rem(30);
   }
 }
-
-.p-staff-blog-archive__archive {}
 
 .p-staff-blog-archive__archive-title {
   font-size: rem(20);
@@ -32,7 +25,6 @@
   @include mq(md) {
     width: rem(670)
   }
-
 }
 
 .p-staff-blog-archive__archive-content {

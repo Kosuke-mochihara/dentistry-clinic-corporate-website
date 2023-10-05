@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .p-header__drawer {
-
   @include mq(lg) {
     display: none;
   }

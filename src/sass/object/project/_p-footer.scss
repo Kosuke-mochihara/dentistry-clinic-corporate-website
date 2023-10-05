@@ -6,7 +6,6 @@
 
   @include mq(md) {
     padding-top: rem(56);
-
   }
 }
 
@@ -72,7 +71,6 @@
   color: $main-color;
 }
 
-
 .p-footer__tel {
   font-size: rem(32);
   font-weight: bold;
@@ -97,8 +95,6 @@
   font-size: rem(12);
 }
 
-
-
 .p-footer__buttons {
   margin-top: rem(21);
   display: flex;
@@ -109,10 +105,6 @@
     gap: rem(20);
   }
 }
-
-.p-footer__buttons {}
-
-.p-footer__button {}
 
 .p-footer__button a {
   display: inline-block;
@@ -152,7 +144,6 @@
   vertical-align: middle;
 }
 
-
 .p-footer__button--white a {
   color: $main-color;
   background-color: #fff;
@@ -160,14 +151,12 @@
   transition: 0.3s;
 }
 
-
 .p-footer__button--white a:hover {
   color: #fff;
   background-color: $main-color;
   transition: 0.3s;
   opacity: 1;
 }
-
 
 .p-footer__button--white a span {
   background-image: url(../images/common/mail-icon.png);
@@ -194,8 +183,6 @@
   vertical-align: middle;
   transition: 0.3s;
 }
-
-
 
 .p-footer__time-img {
   margin-top: rem(20);
@@ -242,8 +229,6 @@
   }
 }
 
-.p-footer__nav-item {}
-
 .p-footer__nav-item:nth-child(n+2) {
   margin-top: rem(46);
 
@@ -253,13 +238,9 @@
   }
 }
 
-.p-footer__nav-item-box {}
-
 .p-footer__nav-item-body--box {
   width: rem(76);
 }
-
-.p-footer__nav-item-header {}
 
 .p-footer__icon {
   background-image: url(../images/common/right-icon.png);

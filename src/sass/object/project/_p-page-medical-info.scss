@@ -1,18 +1,12 @@
 @use "global" as *;
 
-.p-page-medical-info {}
-
-.p-page-medical-info__items {}
-
-.p-page-medical-info__item {}
 .p-page-medical-info__item:nth-child(n+2) {
   margin-top: rem(100);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }
-
 
 .p-page-medical-info__header {
   position: relative;
@@ -38,7 +32,6 @@
   }
 }
 
-
 .p-page-medical-info__wrapper {
   background-color: #DFF1FD;
 }
@@ -63,7 +56,6 @@
   background-size: cover;
   width: inherit;
   height: inherit;
-
   bottom: 0;
 
   @include mq(md) {
@@ -71,15 +63,10 @@
   }
 }
 
-.p-page-medical-info__inner {}
-
-
-.p-page-medical-info__content-box {}
-
 .p-page-medical-info___section-title {
   text-align: center;
 
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(28);
   }
 }
@@ -99,19 +86,19 @@
   }
 }
 
-.p-page-medical-info__list::before  {
+.p-page-medical-info__list::before {
   position: absolute;
   content: "";
   background-image: url(../images/common/page-medical__icon01-sp.svg);
   background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   width: rem(80);
   height: rem(60);
   top: 0;
   right: calc(20 / 335) * 100%;
-  
-  @include mq(md){
+
+  @include mq(md) {
     background-image: url(../images/common/page-medical__icon01-pc.svg);
     width: rem(100);
     height: rem(80);
@@ -119,19 +106,20 @@
     right: calc(60 / 1000) * 100%;
   }
 }
-.p-page-medical-info__list--red::before  {
+
+.p-page-medical-info__list--red::before {
   position: absolute;
   content: "";
   background-image: url(../images/common/page-medical__icon02-sp.png);
   background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   width: rem(80);
   height: rem(60);
   top: 0;
   right: calc(20 / 335) * 100%;
-  
-  @include mq(md){
+
+  @include mq(md) {
     background-image: url(../images/common/page-medical__icon02-pc.png);
     width: rem(100);
     height: rem(80);
@@ -141,7 +129,7 @@
 }
 
 .p-page-medical-info__list:nth-child(n+2) {
- margin-top: rem(40);
+  margin-top: rem(40);
 }
 
 .p-page-medical-info__content {
@@ -164,7 +152,6 @@
 
   @include mq(md) {
     font-size: rem(28);
-    ;
   }
 }
 
@@ -213,8 +200,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .p-page-medical-info__footer {
   position: relative;
