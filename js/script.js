@@ -128,6 +128,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 // GSAP
+
 // 下から出てくるアニメーション
 document.addEventListener('DOMContentLoaded', function () {
   let slideInElements = document.querySelectorAll('.js-slideIn');
@@ -141,9 +142,8 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 1,
         ease: 'power2.out',
         scrollTrigger: {
-          trigger: slideInElement, // こちらも修正
+          trigger: slideInElement,
           start: 'top bottom',
-          markers: true,
           toggleActions: 'play none none reverse'
         }
       }
@@ -158,29 +158,71 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelector('.js-hamburger').addEventListener('click', function() {
     if(!isAnimated) {
-      // アニメーションを表示する場合
       gsap.fromTo('.js-sp-nav', 
         {x:-20, autoAlpha:0}, 
-        {x:0, autoAlpha:1, delay:.3, duration: 0.5, ease: 'power3.inOut', stagger:.15 }
+        {x:0, autoAlpha:1, delay:.3, duration: 0.2, ease: 'power3.inOut', stagger:.15 }
       );
     } else {
-      // アニメーションを即座に非表示にする場合
       gsap.set('.js-sp-nav', {autoAlpha: 0});
     }
 
-    // アニメーションの状態をトグル
     isAnimated = !isAnimated;
   });
 });
 
 
+// トップページ横並びのアニメーション
 document.addEventListener('DOMContentLoaded', function () {
-  let jsAbouts = document.querySelectorAll('.js-about');
-  gsap.fromTo(jsAbouts, {y: 20, autoAlpha:0}, {y: 0, autoAlpha:1, delay:.3, duration:.3, ease: 'power3.inOut', stagger:.1,scrollTrigger: {
-    trigger: jsAbouts, // こちらも修正
-    start: 'top bottom',
-    markers: true,
-    toggleActions: 'play none none reverse'
-  }});
+  const mm = gsap.matchMedia();
+  mm.add('(max-width: 767px)',function(){
+    const jsAbousts = document.querySelectorAll('.js-about');
+    jsAbousts .forEach(function (jsAboust) {
+      gsap.fromTo(jsAboust,
+        {y:10, autoAlpha:0},
+        {
+          y:0,
+          autoAlpha:1,
+          delay:.3,
+          duration: .5,
+          ease: 'power3.inOut',
+          stagger:.1,
+          scrollTrigger: {
+            trigger: jsAboust,
+            start: 'top bottom',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
+    });
+  })
+  mm.add('(min-width: 768px)',function(){
+    gsap.fromTo('.js-about',{y:10, autoAlpha:0},{y:0, autoAlpha:1, delay:.1, duration:1, ease: 'power3.inOut', stagger:.1, scrollTrigger: {
+      trigger: '.js-about-trigger',
+      start: 'center bottom',
+      toggleActions: 'play none none reverse'
+    }});
   });
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.fromTo('.js-staff-img',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)', delay:.5, duration:1, ease: 'power3.inOut',
+  })
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+const mm = gsap.matchMedia();
+mm.add('(max-width: 767px)',function(){
+  const jsStaffImgs = document.querySelectorAll('.js-staff-img');
+  jsStaffImgs .forEach(function (jsStaffImg) {
+    gsap.fromTo(jsStaffImg,
+      {clipPath:'inset(0 100% 0 0)'},
+      {clipPath:'inset(0 0% 0 0)', delay:0, duration:1, ease: 'power3.inOut',scrollTrigger: {
+        trigger: jsStaffImg,
+        start: 'top bottom',
+        toggleActions: 'play none none reverse'
+        }}
+    );
+  });
+})
+});

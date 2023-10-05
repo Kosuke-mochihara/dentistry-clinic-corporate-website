@@ -33,7 +33,7 @@
           <div class="p-page-staff__director-bottom">みなみ歯科クリニック<br>院長　南 俊雄
           </div>
 
-          <div class="p-page-staff__content-img u-mobile">
+          <div class="p-page-staff__content-img u-mobile js-staff-img">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-staff__director-img-sp.jpg"
               alt="院長の画像">
           </div>
@@ -66,7 +66,7 @@
           </div>
 
         </div>
-        <div class="p-page-staff__content-img u-desktop">
+        <div class="p-page-staff__content-img u-desktop js-staff-img">
           <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-staff__director-img-sp.jpg"
             alt="院長の画像">
         </div>
@@ -116,16 +116,16 @@
 <section id="staff-2" class="l-page-staff-member p-page-staff-member">
   <div class="p-page-staff-member__inner l-inner js-slideIn">
     <div class="section__box">
-      <h2 class="p-top-about__section-title section__title section__title--accent">スタッフ紹介</h2>
+      <h2 class="p-top-about__section-title section__title section__title--accent js-slideIn">スタッフ紹介</h2>
     </div>
 
-    <div class="p-page-staff-member__items">
+    <div class="p-page-staff-member__items js-slideIn">
       <div class="p-page-staff-member__item">
         <h3 class="p-page-staff-member__title">歯科衛生士</h3>
         <ul class="p-page-staff-member__lists">
 
           <li class="p-page-staff-member__list">
-            <div class="p-page-staff-member__img">
+            <div class="p-page-staff-member__img js-staff-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-staff-member__img01.jpg"
                 alt="スタッフ画像">
             </div>
@@ -148,7 +148,7 @@
             </dl>
           </li>
           <li class="p-page-staff-member__list">
-            <div class="p-page-staff-member__img">
+            <div class="p-page-staff-member__img js-staff-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-staff-member__img02.jpg"
                 alt="スタッフ画像">
             </div>
@@ -171,7 +171,7 @@
             </dl>
           </li>
         </ul>
-   
+
       </div>
       <div class="p-page-staff-member__item">
         <h3 class="p-page-staff-member__title">歯科助手</h3>
@@ -189,10 +189,10 @@
           <?php if ($the_query->have_posts()): ?>
           <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
           <!-- ここに投稿がある場合の記述 -->
-          
+
 
           <li class="p-page-staff-member__list">
-            <div class="p-page-staff-member__img">
+            <div class="p-page-staff-member__img js-staff-img">
               <img src="<?php the_field('images'); ?>" alt="スタッフ画像">
             </div>
             <div class="p-page-staff-member__description">
@@ -219,7 +219,7 @@
           <!-- ここに投稿がない場合の記述 -->
           <?php endif; wp_reset_postdata(); ?>
 
-        
+
         </ul>
       </div>
     </div>

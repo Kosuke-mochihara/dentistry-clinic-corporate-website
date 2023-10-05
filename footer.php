@@ -156,7 +156,7 @@
           </a>
         </div>
         <div class="c-banner-bottom__web-reservation-box">
-          <a href="page-reservation.html">
+          <a href="<?php echo $reservation; ?>">
             <div class="c-banner-bottom__web-reservation-img">
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/pc-tab-icon.png" alt="パソコンのアイコン">
             </div>

@@ -99,7 +99,6 @@
 
 .p-top-blog__content {
   @include mq(md) {
-    margin-top: rem(-34);
     padding: rem(24) rem(24) rem(14);
     border-radius: 0 0 20px 20px;
 
