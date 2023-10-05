@@ -26,6 +26,7 @@ $base-font-family: 'M PLUS Rounded 1c', sans-serif;
 body {
   font-family: $base-font-family;
   color: #393939;
+  overflow-x: hidden;
 }
 
 // spナビゲーション時固定
