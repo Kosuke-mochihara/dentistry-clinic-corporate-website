@@ -65,12 +65,12 @@
 
         <div class="p-page-medical-info__wrapper">
           <div class="p-page-medical-info__inner l-inner">
-            <div class="p-page-medical-info__content-box">
+            <div class="p-page-medical-info__content-box js-slideIn">
               <div class="section__box">
                 <h2 class="p-page-medical-info___section-title section__title section__title--accent">一般診療</h2>
               </div>
               <ul class="p-page-medical-info__lists">
-                <li id="medical-01" class="p-page-medical-info__list">
+                <li id="medical-01" class="p-page-medical-info__list js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">一般歯科</h3>
                     <div class="p-page-medical-info__sub-title">虫歯治療、歯茎がしみるなど</div>
@@ -85,7 +85,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-02" class="p-page-medical-info__list">
+                <li id="medical-02" class="p-page-medical-info__list js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">小児歯科</h3>
                     <div class="p-page-medical-info__sub-title">小さいお子様の歯の治療</div>
@@ -100,7 +100,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-03" class="p-page-medical-info__list">
+                <li id="medical-03" class="p-page-medical-info__list js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">予防歯科</h3>
                     <div class="p-page-medical-info__sub-title">口腔内のケア全般</div>
@@ -130,13 +130,13 @@
 
         <div class="p-page-medical-info__wrapper">
           <div class="p-page-medical-info__inner l-inner">
-            <div class="p-page-medical-info__content-box">
+            <div class="p-page-medical-info__content-box js-slideIn">
               <div class="section__box">
 
-                <h2 class="p-page-medical-info___section-title section__title section__title--accent">特殊診療</h2>
+                <h2 class="p-page-medical-info___section-title section__title section__title--accent js-slideIn">特殊診療</h2>
               </div>
               <ul class="p-page-medical-info__lists">
-                <li id="medical-04" class="p-page-medical-info__list p-page-medical-info__list--red">
+                <li id="medical-04" class="p-page-medical-info__list p-page-medical-info__list--red js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">入れ歯</h3>
                     <div class="p-page-medical-info__sub-title">入れ歯を作りたい、調整したい</div>
@@ -151,7 +151,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-05" class="p-page-medical-info__list p-page-medical-info__list--red">
+                <li id="medical-05" class="p-page-medical-info__list p-page-medical-info__list--red ">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">矯正歯科</h3>
                     <div class="p-page-medical-info__sub-title">歯並びが気になる</div>
@@ -166,7 +166,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-06" class="p-page-medical-info__list p-page-medical-info__list--red">
+                <li id="medical-06" class="p-page-medical-info__list p-page-medical-info__list--red js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">ホワイトニング</h3>
                     <div class="p-page-medical-info__sub-title">歯を白くしたい</div>
@@ -181,7 +181,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-07" class="p-page-medical-info__list p-page-medical-info__list--red">
+                <li id="medical-07" class="p-page-medical-info__list p-page-medical-info__list--red js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">口腔外科</h3>
                     <div class="p-page-medical-info__sub-title">インプラント、親知らずの抜歯</div>
@@ -196,7 +196,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="medical-08" class="p-page-medical-info__list p-page-medical-info__list--red">
+                <li id="medical-08" class="p-page-medical-info__list p-page-medical-info__list--red js-slideIn">
                   <div class="p-page-medical-info__content">
                     <h3 class="p-page-medical-info__title">レーザー治療</h3>
                     <div class="p-page-medical-info__sub-title">口内炎を治したい</div>

@@ -36,7 +36,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
@@ -116,15 +115,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  // フリガナ自動入力ライブラリここから
-		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
-			katakana: false
-		});
-		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
-			katakana: false
-		});
-
-
   // コンタクトフォーム カレンダークリック時色が変わる
     $('.p-contact-forwpcf7 .requiredm__input').on('change', function(){
       if($(this).val()){
@@ -133,9 +123,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(this).css('color', '#C2C2C2');
       }
     });
-
- 
-
-
 });
 
+
+// GSAP
+document.addEventListener('DOMContentLoaded', function () {
+  let slideInElements = document.querySelectorAll('.js-slideIn');
+  slideInElements.forEach(function (slideInElement) {
+    gsap.fromTo(slideInElement,
+      {y:20, autoAlpha:0},
+      {
+        y:0,
+        autoAlpha:1,
+        delay:.5,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: slideInElement, // こちらも修正
+          start: 'top bottom',
+          markers: true,
+          toggleActions: 'play none none reverse'
+        }
+      }
+    );
+  });
+});

@@ -16,7 +16,7 @@
 
 <div id="archive-1" class="l-staff-blog p-staff-blog">
   <div class="p-staff-blog__inner l-inner">
-    <div class="p-staff-blog__contents">
+    <div class="p-staff-blog__contents js-slideIn">
       <div class="p-staff-blog__content">
         <ul class="p-staff-blog__items">
           <li class="p-staff-blog__item">

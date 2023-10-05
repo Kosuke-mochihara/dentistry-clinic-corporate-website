@@ -22,7 +22,7 @@
     </div>
     <div class="p-top-concept__contents">
       <div class="p-top-concept__content-bg">
-        <div class="p-top-concept__content">
+        <div class="p-top-concept__content js-slideIn">
           <div class="p-top-concept__img">
             <img src="<?php echo get_template_directory_uri(); ?>//images/common/about-about__img-sp.jpg" alt="診察風景">
           </div>
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="p-top-concept__content">
+      <div class="p-top-concept__content js-slideIn">
         <div class="p-top-concept__img">
           <img src="<?php echo get_template_directory_uri(); ?>//images/common/about-about__img02-sp.jpg" alt="受けつけの画像">
         </div>
@@ -52,7 +52,7 @@
   </section>
 
   <section id="about-2" class="l-page-about p-page-about">
-    <div class="p-page-about__inner l-inner">
+    <div class="p-page-about__inner l-inner js-slideIn">
       <h2 class="p-page-about__section-title section__title">院内の様子</h2>
       <div class="p-page-about__contents">
         <ul class="p-page-about__items">

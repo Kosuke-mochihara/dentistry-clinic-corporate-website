@@ -16,7 +16,7 @@
 
 <section id="staff-1" class="l-page-staff p-page-staff">
   <div class="p-page-staff__inner l-inner">
-    <div class="p-page-staff__contents">
+    <div class="p-page-staff__contents js-slideIn">
       <div class="section__box">
         <h2 class="p-top-about__section-title section__title section__title--accent">院長のあいさつ</h2>
       </div>
@@ -114,7 +114,7 @@
 <!-- スワイパーここまで -->
 
 <section id="staff-2" class="l-page-staff-member p-page-staff-member">
-  <div class="p-page-staff-member__inner l-inner">
+  <div class="p-page-staff-member__inner l-inner js-slideIn">
     <div class="section__box">
       <h2 class="p-top-about__section-title section__title section__title--accent">スタッフ紹介</h2>
     </div>

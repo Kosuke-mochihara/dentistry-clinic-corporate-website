@@ -16,7 +16,7 @@
 
 <section class="l-page-contact p-page-contact">
   <div class="p-page-contact__inner l-inner">
-    <p class="p-page-contact__text">
+    <p class="p-page-contact__text js-slideIn">
       お急ぎの方は、お電話(TEL 03-1234-5678)での連絡がスムーズです。<br>
       以下のフォームからお問い合わせ頂いた場合、ご連絡が2～3日後になる場合がございます。<br>
       また、メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br>
@@ -26,12 +26,12 @@
   
 
     <!-- お問い合わせフォーム -->
-    <div class="section__box p-page-contact__section-box">
+    <div class="section__box p-page-contact__section-box js-slideIn">
       <h2 class="p-page-contact__section-title section__title section__title--accent">お問い合わせ<br>
         フォーム</h2>
     </div>
 
-    <div class="p-page-contact__form p-contact-form l-contact-form">
+    <div class="p-page-contact__form p-contact-form l-contact-form js-slideIn">
       <?php echo do_shortcode('[contact-form-7 id="148" title="お問い合わせ"]'); ?>
     </div>
 

@@ -2,6 +2,7 @@
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: #393939;
+  overflow-x: hidden;
 }
 
 body.fixed {
@@ -3618,6 +3619,10 @@ textarea {
           align-items: center;
   gap: 10px;
   gap: 0.625rem;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .p-staff-blog__item a {
@@ -3638,18 +3643,7 @@ textarea {
   max-width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 133px;
-          flex: 0 0 133px;
-  -ms-flex: 0 0 8.3125rem;
-      flex: 0 0 8.3125rem;
-}
-@media screen and (min-width: 768px) {
-  .p-staff-blog__img {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 15.25rem;
-            flex: 0 0 15.25rem;
-  }
+  width: 50%;
 }
 
 .p-staff-blog__img img {
@@ -4037,9 +4031,11 @@ textarea {
 .p-top-blog__img {
   aspect-ratio: 133/101;
   overflow: hidden;
+  width: 50%;
 }
 @media screen and (min-width: 768px) {
   .p-top-blog__img {
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
   }
 }
