@@ -127,6 +127,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 // GSAP
+// 下から出てくるアニメーション
 document.addEventListener('DOMContentLoaded', function () {
   let slideInElements = document.querySelectorAll('.js-slideIn');
   slideInElements.forEach(function (slideInElement) {
@@ -148,3 +149,37 @@ document.addEventListener('DOMContentLoaded', function () {
     );
   });
 });
+
+
+// spナビの各リンクの動き
+document.addEventListener('DOMContentLoaded', function () {
+  let isAnimated = false;  // アニメーションの状態を追跡する変数
+
+  document.querySelector('.js-hamburger').addEventListener('click', function() {
+    if(!isAnimated) {
+      // アニメーションを表示する場合
+      gsap.fromTo('.js-sp-nav', 
+        {x:-20, autoAlpha:0}, 
+        {x:0, autoAlpha:1, delay:.3, duration: 0.5, ease: 'power3.inOut', stagger:.15 }
+      );
+    } else {
+      // アニメーションを即座に非表示にする場合
+      gsap.set('.js-sp-nav', {autoAlpha: 0});
+    }
+
+    // アニメーションの状態をトグル
+    isAnimated = !isAnimated;
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  let jsAbouts = document.querySelectorAll('.js-about');
+  gsap.fromTo(jsAbouts, {y: 20, autoAlpha:0}, {y: 0, autoAlpha:1, delay:.3, duration:.3, ease: 'power3.inOut', stagger:.1,scrollTrigger: {
+    trigger: jsAbouts, // こちらも修正
+    start: 'top bottom',
+    markers: true,
+    toggleActions: 'play none none reverse'
+  }});
+  });
+

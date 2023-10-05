@@ -10,8 +10,8 @@
 
 
 <!-- 共通パーツ -->
- <div class="l-footer-top p-footer-top"></div>
-  <footer class="l-footer p-footer">
+ <div class="l-footer-top p-footer-top js-slideIn"></div>
+  <footer class="l-footer p-footer js-slideIn">
     <div class="p-footer__inner l-inner">
       <div class="p-footer__box">
         <div class="p-footer__contents">

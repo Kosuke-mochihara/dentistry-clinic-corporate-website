@@ -122,21 +122,21 @@
     <!-- sp用 -->
     <div class="sp-nav js-drawer-menu">
       <ul class="sp-nav__items">
-        <li class="sp-nav__item"><a href="<?php echo $index; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $index; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-01.png" alt="家のアイコン">ホーム</a></li>
-        <li class="sp-nav__item"><a href="<?php echo $about; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $about; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-02.png" alt="ビルのアイコン">当院について</a>
         </li>
-        <li class="sp-nav__item"><a href="<?php echo $medical; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $medical; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-03.png" alt="カルテのアイコン">診療案内</a>
 
         </li>
-        <li class="sp-nav__item"><a href="<?php echo $staff; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $staff; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-04.png" alt="スタッフのアイコン">スタッフ紹介</a>
         </li>
-        <li class="sp-nav__item"><a href="<?php echo $archive; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $archive; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-05.png" alt="ペンのアイコン">スタッフブログ</a></li>
-        <li class="sp-nav__item"><a href="<?php echo $contact; ?>"><img
+        <li class="sp-nav__item js-sp-nav"><a href="<?php echo $contact; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-07.png" alt="メールのアイコン">お問い合わせ</a>
 
         </li>

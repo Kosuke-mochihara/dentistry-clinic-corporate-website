@@ -137,8 +137,8 @@
         <div class="section__box">
             <h2 class="p-top-about__section-title section__titles section__title--accent">当院の3つのおすすめ</h2>
         </div>
-        <ul class="p-top-about__items">
-            <li class="p-top-about__item">
+        <ul class="p-top-about__items js-about-trigger">
+            <li class="p-top-about__item js-about">
                 <div class="p-top-about__header-img">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/top-about__icon01.png"
                         alt="おすすめの画像01">
@@ -150,7 +150,7 @@
                 <p class="p-top-about__text">歯の治療において、小さな違和感は大きなストレスにつながります。<br>
                     私たちは常に快適な歯科医療技術の研究を行っております。</p>
             </li>
-            <li class="p-top-about__item">
+            <li class="p-top-about__item js-about">
                 <div class="p-top-about__header-img">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/top-about__icon02.png"
                         alt="おすすめの画像02">
@@ -161,7 +161,7 @@
                 </div>
                 <p class="p-top-about__text">「通いやすさ」も医院選びの重要なポイントと考え、2019年のリニューアルを期に更に駅の近くへ場所を移しました。</p>
             </li>
-            <li class="p-top-about__item">
+            <li class="p-top-about__item js-about">
                 <div class="p-top-about__header-img">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/top-about__icon03.png"
                         alt="おすすめの画像03">
