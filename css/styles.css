@@ -2,6 +2,7 @@
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: #393939;
+  overflow-x: hidden;
 }
 
 body.fixed {
