@@ -9,7 +9,7 @@
 
   @include mq(md) {
     background-image: url(../images/common/footer__bg-top-pc.png);
-    background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
   }

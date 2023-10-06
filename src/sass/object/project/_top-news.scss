@@ -25,13 +25,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #393939;
+  border-bottom: rem(1) solid #393939;
   padding-left: rem(16);
 }
 
 .p-top-news__item-footer {
   padding: 0 rem(6);
-  border-bottom: 1px solid #393939;
+  border-bottom: rem(1) solid #393939;
 }
 
 .p-top-news__box {
@@ -67,7 +67,7 @@
 .p-top-news__past-news {
   color: #888;
   font-size: rem(11);
-  border-bottom: 1px solid #888;
+  border-bottom: rem(1) solid #888;
 }
 
 .p-top-news__date {
@@ -89,7 +89,7 @@
   content: "";
   padding-bottom: rem(10);
   background-image: url(../images/common/icon-right.png);
-  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: rem(14);

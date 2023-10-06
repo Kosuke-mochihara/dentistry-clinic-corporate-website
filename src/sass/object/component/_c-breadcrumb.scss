@@ -6,6 +6,7 @@
 
 .c-breadcrumb__inner.l-inner {
   width: calc(355/375) * 100%;
+
   @include mq(md) {
     width: calc(1160/1280) * 100%;
     max-width: 100%;
@@ -27,11 +28,10 @@
   content: '';
 }
 
-
 .c-breadcrumb__item a:hover {
   opacity: 0.8;
 }
 
-.c-breadcrumb__link--accent{
- color: #C2C2C2;
+.c-breadcrumb__link--accent {
+  color: #C2C2C2;
 }

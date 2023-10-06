@@ -10,10 +10,6 @@
   }
 }
 
-.p-top-blog__item {
-  @include mq(md) {}
-}
-
 .p-top-blog__item a {
   position: relative;
   display: flex;

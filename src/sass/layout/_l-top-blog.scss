@@ -3,15 +3,15 @@
 .l-top-blog {
   margin-top: rem(100);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }
 
-.l-top-blog__items{
+.l-top-blog__items {
   margin-top: rem(40);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(60);
   }
 }

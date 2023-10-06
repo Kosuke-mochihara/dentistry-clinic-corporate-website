@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.l-page-staff-member{
+.l-page-staff-member {
   margin-top: rem(100);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }

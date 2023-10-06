@@ -34,7 +34,7 @@
   width: rem(49);
   height: rem(13);
 
-  @include mq(md){
+  @include mq(md) {
     left: rem(-91);
     width: rem(67);
     height: rem(20);
@@ -53,8 +53,8 @@
   right: rem(-65);
   width: rem(49);
   height: rem(13);
-  
-  @include mq(md){
+
+  @include mq(md) {
     right: rem(-91);
     width: rem(67);
     height: rem(20);

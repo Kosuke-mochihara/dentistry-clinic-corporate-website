@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.l-page-about{
+.l-page-about {
   margin-top: rem(103);
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(160);
   }
 }

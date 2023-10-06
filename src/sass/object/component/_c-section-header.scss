@@ -1,22 +1,17 @@
 @use "global" as *;
 
-.c-section-header {}
-
-
-.c-section-header__inner {}
-
 .c-section-header__contents {
   position: relative;
-  background-size: cover; 
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   width: 89.3333%;
   height: rem(188);
   margin: 0 auto;
   border-radius: 12px;
-  
-  @include mq(md){
-    background-size: cover; 
+
+  @include mq(md) {
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 90.63%;
@@ -53,7 +48,7 @@
   letter-spacing: 0.2em;
   line-height: 1;
 
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(32);
     letter-spacing: 0.1em;
   }
@@ -64,7 +59,7 @@
   font-size: rem(12);
   text-transform: uppercase;
 
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(30);
     font-size: rem(14);
     letter-spacing: 0.1em;

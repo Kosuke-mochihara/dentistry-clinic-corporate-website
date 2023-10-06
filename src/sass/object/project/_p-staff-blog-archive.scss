@@ -47,7 +47,7 @@
   position: absolute;
   content: "";
   background-image: url(../images/common/staff-blog-archive__icon.png);
-  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-size: cover;
   background-repeat: no-repeat;
   width: rem(14);
   height: rem(14);
@@ -191,7 +191,6 @@
   left: rem(14);
 }
 
-
 .p-staff-blog-archive__btn-summary a {
   padding: rem(12) rem(18) rem(11);
   color: $main-color;
@@ -215,7 +214,7 @@
   position: absolute;
   content: "";
   background-image: url(../images/common/archive-arrow-right.png);
-  background-size: cover; //比率はそのままで￥拡張縮小、上下または左右が切り捨てになる。
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: rem(16);

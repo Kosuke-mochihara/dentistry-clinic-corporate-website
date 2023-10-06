@@ -9,7 +9,7 @@
   right: 0;
   z-index: 10000;
 
-  @include mq(md){
+  @include mq(md) {
     display: none;
   }
 }
