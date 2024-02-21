@@ -51,8 +51,10 @@
   }
 }
 
-.p-top-blog__item a:hover {
-  color: $main-color;
+@media (hover: hover) {
+  .p-top-blog__item a:hover {
+    color: $main-color;
+  }
 }
 
 .p-top-blog__item a:hover .p-top-blog__img img {
@@ -152,10 +154,12 @@
   }
 }
 
-.p-top-blog__btn a:hover {
-  background-color: $main-color;
-  color: #fff;
-  opacity: 1;
+@media (hover: hover) {
+  .p-top-blog__btn a:hover {
+    background-color: $main-color;
+    color: #fff;
+    opacity: 1;
+  }
 }
 
 .p-top-blog__btn a::after {

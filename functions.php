@@ -193,3 +193,22 @@ function post_has_archive($args, $post_type){
 	return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+
+
+
+// ヘッダー部分からWordPressのバージョン情報を削除
+remove_action('wp_head', 'wp_generator');
+
+// RSSフィードからWordPressのバージョン情報を削除
+add_filter('the_generator', '__return_empty_string');
+
+// スクリプトとスタイルシートのURLからバージョンパラメータを削除
+function remove_version_scripts_styles($src) {
+    if (strpos($src, 'ver=')) {
+        $src = remove_query_arg('ver', $src);
+    }
+    return $src;
+}
+add_filter('style_loader_src', 'remove_version_scripts_styles', 9999);
+add_filter('script_loader_src', 'remove_version_scripts_styles', 9999);

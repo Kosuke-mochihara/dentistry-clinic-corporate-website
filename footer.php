@@ -134,7 +134,7 @@
         </ul>
       </div>
       <div class="p-footer__copyright">
-        <small class="p-footer__copyright-text">&copy;2020-2021 みなみ歯科クリニック</small>
+        <small class="p-footer__copyright-text">&copy;2020-<?php echo date('Y'); ?> みなみ歯科クリニック</small>
       </div>
     </div>
   </footer>
