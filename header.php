@@ -2,24 +2,22 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- フォント -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <?php wp_head(); ?>
 </head>
 
 <?php
-  $index = esc_url( home_url( '/' ) );
-  $about = esc_url( home_url( '/about/' ) );
-  $medical = esc_url( home_url( '/medical/' ) );
-  $staff = esc_url( home_url( '/staff/' ) );
-  $archive = esc_url( home_url( '/blog/' ) );
-  $contact = esc_url( home_url( '/contact/' ) );
+$index = esc_url(home_url('/'));
+$about = esc_url(home_url('/about/'));
+$medical = esc_url(home_url('/medical/'));
+$staff = esc_url(home_url('/staff/'));
+$archive = esc_url(home_url('/blog/'));
+$contact = esc_url(home_url('/contact/'));
 ?>
 
 
@@ -27,18 +25,18 @@
   <?php wp_body_open(); ?>
   <header class="l-header p-header">
     <div class="p-header__inner l-inner">
-      <?php if ( is_front_page() ): ?>
-      <h1 class="c-logo">
-        <a class="logo__link" href="<?php echo $index; ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-logo-01-pc.svg" alt="ロゴ">
-        </a>
-      </h1>
-      <?php else : ?>
-      <div class="c-logo">
-        <a class="logo__link" href="<?php echo $index; ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-logo-01-pc.svg" alt="ロゴ">
-        </a>
-      </div>
+      <?php if (is_front_page()): ?>
+        <h1 class="c-logo">
+          <a class="logo__link" href="<?php echo $index; ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-logo-01-pc.svg" alt="ロゴ">
+          </a>
+        </h1>
+      <?php else: ?>
+        <div class="c-logo">
+          <a class="logo__link" href="<?php echo $index; ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-logo-01-pc.svg" alt="ロゴ">
+          </a>
+        </div>
       <?php endif; ?>
       <button class="p-header__drawer c-hamburger js-hamburger">
         <span></span>
@@ -138,7 +136,6 @@
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-05.png" alt="ペンのアイコン">スタッフブログ</a></li>
         <li class="sp-nav__item js-sp-nav"><a href="<?php echo $contact; ?>"><img
               src="<?php echo get_template_directory_uri(); ?>/images/common/icon-07.png" alt="メールのアイコン">お問い合わせ</a>
-
         </li>
       </ul>
     </div>
