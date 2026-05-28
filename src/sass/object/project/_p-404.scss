@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.p-404 {
+  text-align: center;
+  word-break: auto-phrase;
+  margin-top: rem(50);
+
+  @include mq() {
+    margin-top: rem(100);
+  }
+}
+
+.p-404__title {
+  font-size: rem(22);
+  font-weight: 700;
+  line-height: 150%;
+  @include mq() {
+    font-size: rem(28);
+  }
+}
+
+.p-404__text {
+  font-size: rem(16);
+  margin-top: rem(32);
+  line-height: 150%;
+  text-align: left;
+  @include mq() {
+    font-size: rem(18);
+    margin-top: rem(20);
+    text-align: center;
+  }
+}
+
+.p-404__button {
+  margin-top: rem(32);
+  @include mq() {
+    margin-top: rem(60);
+  }
+}
+.p-404__button a {
+  position: relative;
+  font-size: rem(14);
+  color: $main-color;
+  border: 1px solid $main-color;
+  border-radius: rem(24);
+  padding: rem(13) rem(41);
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.p-404__button a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/icon-arrow-blue-btn.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(12);
+  height: rem(12);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: rem(12);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

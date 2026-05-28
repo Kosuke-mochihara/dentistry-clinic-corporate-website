@@ -242,6 +242,13 @@
   width: rem(76);
 }
 
+@media (any-hover: hover) {
+  .p-footer__nav-link:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+}
+
 .p-footer__icon {
   background-image: url(../images/common/right-icon.png);
   background-size: cover;

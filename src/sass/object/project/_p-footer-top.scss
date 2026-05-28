@@ -2,14 +2,14 @@
 
 .p-footer-top {
   background-image: url(../images/common/footer__bg-top-sp.png);
-  background-size: cover; 
+  background-size: 100% 100%; 
   background-repeat: no-repeat;
   padding-top: rem(45);
   width: 100%;
 
   @include mq(md) {
     background-image: url(../images/common/footer__bg-top-pc.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: bottom;
     background-repeat: no-repeat;
   }

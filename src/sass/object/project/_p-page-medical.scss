@@ -69,6 +69,7 @@
   justify-content: center;
   margin: 0 auto;
   border-radius: 12px;
+  transition: 0.3s;
 
   @include mq(md) {
     padding: rem(24) rem(32);
@@ -82,5 +83,4 @@
 .p-page-medical__item a:hover {
   color: #fff;
   background-color: $main-color;
-  transition: 0.3s;
 }

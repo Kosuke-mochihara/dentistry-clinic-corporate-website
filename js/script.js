@@ -152,11 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // spナビの各リンクの動き
 document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".js-hamburger");
+  if (!hamburger) return;
+
   let isAnimated = false; // アニメーションの状態を追跡する変数
 
-  document
-    .querySelector(".js-hamburger")
-    .addEventListener("click", function () {
+  hamburger.addEventListener("click", function () {
       if (!isAnimated) {
         gsap.fromTo(
           ".js-sp-nav",
@@ -204,8 +205,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   mm.add("(min-width: 768px)", function () {
+    const aboutItems = document.querySelectorAll(".js-about");
+    const aboutTrigger = document.querySelector(".js-about-trigger");
+    if (!aboutItems.length || !aboutTrigger) return;
+
     gsap.fromTo(
-      ".js-about",
+      aboutItems,
       { y: 10, autoAlpha: 0 },
       {
         y: 0,
@@ -215,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ease: "power3.inOut",
         stagger: 0.1,
         scrollTrigger: {
-          trigger: ".js-about-trigger",
+          trigger: aboutTrigger,
           start: "center bottom",
           toggleActions: "play none none reverse",
         },
@@ -225,8 +230,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const staffImgs = document.querySelectorAll(".js-staff-img");
+  if (!staffImgs.length) return;
+
   gsap.fromTo(
-    ".js-staff-img",
+    staffImgs,
     { clipPath: "inset(0 100% 0 0)" },
     {
       clipPath: "inset(0 0% 0 0)",
