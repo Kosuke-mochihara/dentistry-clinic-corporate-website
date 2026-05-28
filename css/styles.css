@@ -3159,12 +3159,14 @@ textarea {
   border-radius: 12px;
 }
 
-.p-staff-blog-archive__body {
+.p-staff-blog-archive__body,
+.p-staff-blog-archive__archive-wrapper {
   margin-top: 40px;
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-  .p-staff-blog-archive__body {
+  .p-staff-blog-archive__body,
+  .p-staff-blog-archive__archive-wrapper {
     margin-top: 4.25rem;
   }
 }
@@ -3178,14 +3180,37 @@ textarea {
 .p-staff-blog-archive__body ul,
 .p-staff-blog-archive__body ol,
 .p-staff-blog-archive__body li,
-.p-staff-blog-archive__body hr {
+.p-staff-blog-archive__body hr,
+.p-staff-blog-archive__archive-wrapper h1,
+.p-staff-blog-archive__archive-wrapper h2,
+.p-staff-blog-archive__archive-wrapper h3,
+.p-staff-blog-archive__archive-wrapper h4,
+.p-staff-blog-archive__archive-wrapper h5,
+.p-staff-blog-archive__archive-wrapper h6,
+.p-staff-blog-archive__archive-wrapper a,
+.p-staff-blog-archive__archive-wrapper ul,
+.p-staff-blog-archive__archive-wrapper ol,
+.p-staff-blog-archive__archive-wrapper li,
+.p-staff-blog-archive__archive-wrapper hr {
   all: revert;
 }
-.p-staff-blog-archive__body a {
+.p-staff-blog-archive__body a,
+.p-staff-blog-archive__archive-wrapper a {
   color: #0000ee;
   word-break: break-all;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+.p-staff-blog-archive__body img,
+.p-staff-blog-archive__archive-wrapper img {
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-staff-blog-archive__body img,
+  .p-staff-blog-archive__archive-wrapper img {
+    padding-bottom: 2.5rem;
+  }
 }
 
 .p-staff-blog-archive__archive-text {

@@ -64,7 +64,8 @@
   background-color: $main-color;
   border-radius: 12px;
 }
-.p-staff-blog-archive__body {
+.p-staff-blog-archive__body,
+.p-staff-blog-archive__archive-wrapper {
   margin-top: rem(40);
 
   @include mq(md) {
@@ -89,6 +90,12 @@
     color: #0000ee;
     word-break: break-all;
     transition: opacity 0.3s;
+  }
+  img {
+    padding-bottom: rem(32);
+    @include mq(md) {
+      padding-bottom: rem(40);
+    }
   }
 }
 
